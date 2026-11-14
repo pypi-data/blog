@@ -2,7 +2,7 @@
   "snapshot": "2026-11-13",
   "projects_recent": 335167,
   "projects_all": 354763,
-  "llm_any": 23790,
+  "llm_any": 22563,
   "definitions": {
     "download_share": "Sum of downloads_30d over the projects using the library, divided by the sum of downloads_30d over the projects using any library in the same comparison group. A project using several libraries counts in each. For http the group is requests, httpx and aiohttp; for pydantic it is every project using pydantic.",
     "project_share": "Projects using the library divided by projects in the group.",
@@ -12,6 +12,8 @@
     "llm_any": "Recent projects using any LLM SDK (MCP not counted), each counted once.",
     "mcp_names": "Recent projects whose code uses each of these MCP SDK names.",
     "mcp_client": "Recent projects using the MCP client API (mcp.client or mcp.ClientSession), each counted once.",
+    "own_dropped": "Projects left out of each library's count because they are its own packages (own) or iflow-mcp copies (copies). SDKs: recent projects; requests, httpx, aiohttp, pydantic: all projects.",
+    "own_packages": "A project whose normalised name equals the library's name or starts with it followed by '-' is not counted for that library. iflow-mcp* copies are not counted for any library.",
     "recent": "Latest release uploaded on or after 2025-11-13.",
     "llm_sdks": "Projects using any of: openai, anthropic, litellm, langchain, google-genai, ollama, counted once.",
     "langchain": "Any module starting with 'langchain'.",
@@ -22,270 +24,316 @@
     "pydantic_v1_namespace": "Uses pydantic.v1 (compatibility namespace). Counted separately; it is not v1 or v2 use.",
     "pydantic_top_v1": "Top 10 v1-only projects by downloads_30d; check them, since compat shims inflate v1."
   },
+  "own_dropped": {
+    "openai": {
+      "own": 36,
+      "copies": 129
+    },
+    "anthropic": {
+      "own": 5,
+      "copies": 35
+    },
+    "litellm": {
+      "own": 26,
+      "copies": 21
+    },
+    "langchain": {
+      "own": 973,
+      "copies": 59
+    },
+    "google-genai": {
+      "own": 1,
+      "copies": 30
+    },
+    "ollama": {
+      "own": 18,
+      "copies": 11
+    },
+    "mcp": {
+      "own": 1342,
+      "copies": 1627
+    },
+    "requests": {
+      "own": 61,
+      "copies": 436
+    },
+    "httpx": {
+      "own": 40,
+      "copies": 571
+    },
+    "aiohttp": {
+      "own": 65,
+      "copies": 121
+    },
+    "pydantic": {
+      "own": 228,
+      "copies": 750
+    }
+  },
   "months": [
     [
       "2025-11",
       7469,
-      0.056232427366447985,
-      0.061052349712143524
+      0.04953809077520418,
+      0.023162404605703575
     ],
     [
       "2025-12",
       12751,
-      0.08242490785036467,
-      0.048466786918673045
+      0.07913104854521213,
+      0.03623245235667791
     ],
     [
       "2026-01",
       14373,
-      0.06282613233145481,
-      0.06456550476588047
+      0.05976483684686565,
+      0.03764001948097127
     ],
     [
       "2026-02",
       17320,
-      0.08106235565819861,
-      0.101270207852194
+      0.06836027713625865,
+      0.04030023094688222
     ],
     [
       "2026-03",
       22557,
-      0.08658066232211731,
-      0.06760650795761848
+      0.08334441636742475,
+      0.06259697654829986
     ],
     [
       "2026-04",
       23085,
-      0.08780593458956032,
-      0.06125189517002382
+      0.08408057179987005,
+      0.05640025990903184
     ],
     [
       "2026-05",
       22545,
-      0.08551785318252385,
-      0.06258593923264583
+      0.08183632734530938,
+      0.05748502994011976
     ],
     [
       "2026-06",
       23467,
-      0.07810968594196105,
-      0.07060979247453872
+      0.07580858226445647,
+      0.06703029786508714
     ],
     [
       "2026-07",
       26119,
-      0.07427543167808874,
-      0.06558444044565259
+      0.07163367663386806,
+      0.062483249741567444
     ],
     [
       "2026-08",
       27684,
-      0.0655252131194914,
-      0.06585031064875017
+      0.06252709146077157,
+      0.061298945239127295
     ],
     [
       "2026-09",
       33260,
-      0.05959110042092604,
-      0.06371016235718581
+      0.05724594107035478,
+      0.060072158749248344
     ],
     [
       "2026-10",
       56685,
-      0.05964540883831702,
-      0.06493781423657052
+      0.05650524830201994,
+      0.061974067213548555
     ],
     [
       "2026-11",
       47852,
-      0.06591156064532308,
-      0.08114603360361114
+      0.06242163336955613,
+      0.07765610632784418
     ]
   ],
   "month_counts": [
     [
       "2025-11",
-      420,
-      456
+      370,
+      173
     ],
     [
       "2025-12",
-      1051,
-      618
+      1009,
+      462
     ],
     [
       "2026-01",
-      903,
-      928
+      859,
+      541
     ],
     [
       "2026-02",
-      1404,
-      1754
+      1184,
+      698
     ],
     [
       "2026-03",
-      1953,
-      1525
+      1880,
+      1412
     ],
     [
       "2026-04",
-      2027,
-      1414
+      1941,
+      1302
     ],
     [
       "2026-05",
-      1928,
-      1411
+      1845,
+      1296
     ],
     [
       "2026-06",
-      1833,
-      1657
+      1779,
+      1573
     ],
     [
       "2026-07",
-      1940,
-      1713
+      1871,
+      1632
     ],
     [
       "2026-08",
-      1814,
-      1823
+      1731,
+      1697
     ],
     [
       "2026-09",
-      1982,
-      2119
+      1904,
+      1998
     ],
     [
       "2026-10",
-      3381,
-      3681
+      3203,
+      3513
     ],
     [
       "2026-11",
-      3154,
-      3883
+      2987,
+      3716
     ]
   ],
   "sdks": [
     [
       "openai",
-      12261
+      12096
     ],
     [
       "anthropic",
-      7758
+      7718
     ],
     [
       "litellm",
-      3018
+      2971
     ],
     [
       "langchain",
-      7753
+      6721
     ],
     [
       "google-genai",
-      3440
+      3409
     ],
     [
       "ollama",
-      1281
+      1252
     ],
     [
       "mcp",
-      22982
+      20013
     ]
   ],
   "mcp_names": [
     [
       "mcp.server",
-      20071
+      17329
     ],
     [
       "mcp.server.fastmcp.FastMCP",
-      11709
+      9902
     ],
     [
       "mcp.ClientSession",
-      2258
+      2086
     ]
   ],
-  "mcp_client": 3005,
+  "mcp_client": 2774,
   "sdks_share": [
     [
       "openai",
-      0.03658176371778844
+      0.0360894718155427
     ],
     [
       "anthropic",
-      0.023146670167409084
+      0.02302732667595557
     ],
     [
       "litellm",
-      0.009004466430167647
+      0.00886423782770977
     ],
     [
       "langchain",
-      0.023131752230977392
+      0.020052690151476725
     ],
     [
       "google-genai",
-      0.010263540265002223
+      0.01017104905912575
     ],
     [
       "ollama",
-      0.003821975313798793
+      0.003735451282494995
     ],
     [
       "mcp",
-      0.0685688030146166
+      0.0597105323614795
     ]
   ],
   "http": [
     [
       "requests",
-      46249,
-      0.7246971490557087
+      45752,
+      0.7359487783711165
     ],
     [
       "httpx",
-      41723,
-      0.2670982879825676
+      41112,
+      0.26355046045212727
     ],
     [
       "aiohttp",
-      9734,
-      0.47452133647308364
+      9548,
+      0.49925808949173867
     ]
   ],
   "http_project_share": {
-    "requests": 0.5168756565859765,
-    "httpx": 0.4662933905541027,
-    "aiohttp": 0.10878651735622163
+    "requests": 0.5181309596611628,
+    "httpx": 0.4655840184820276,
+    "aiohttp": 0.10812892120223777
   },
   "http_group": {
-    "projects": 89478,
-    "downloads": 7787310951
+    "projects": 88302,
+    "downloads": 7273549087
   },
   "pydantic": {
     "v1": [
-      483,
-      0.13383856736950347
+      465,
+      0.14577521330323825
     ],
     "v2": [
-      23904,
-      0.3997814162881437
+      23696,
+      0.42752272942078945
     ],
-    "both": 628,
-    "v1_namespace": 567,
-    "users": 59336,
-    "downloads": 3221552027,
+    "both": 619,
+    "v1_namespace": 563,
+    "users": 58358,
+    "downloads": 2957729241,
     "project_share": {
-      "v1": 0.008140083591748686,
-      "v2": 0.4028582985034381
+      "v1": 0.007968059220672402,
+      "v2": 0.40604544364097467
     },
     "top_v1": [
       [

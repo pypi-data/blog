@@ -4,12 +4,16 @@ FROM (
          CASE WHEN module LIKE 'langchain%' THEN 'langchain'
               WHEN module = 'google' THEN 'google-genai'
               ELSE module END AS sdk
-  FROM 'hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d/refs.parquet'
+  FROM 'REFS'
   WHERE module IN ('openai', 'anthropic', 'litellm', 'ollama', 'mcp')
      OR module LIKE 'langchain%'
      OR name = 'google.genai' OR name LIKE 'google.genai.%'
 )
-JOIN 'hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d/projects.parquet' USING (project)
+JOIN 'PROJECTS' USING (project)
 WHERE upload_time >= '2025-11-13'
+  -- leave out each SDK's own packages (langchain-*, mcp-*) and the iflow-mcp copies
+  AND NOT starts_with(lower(project), 'iflow-mcp')
+  AND NOT (replace(replace(lower(project), '_', '-'), '.', '-') = sdk
+           OR starts_with(replace(replace(lower(project), '_', '-'), '.', '-'), sdk || '-'))
 GROUP BY sdk
 ORDER BY projects DESC;

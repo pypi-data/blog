@@ -128,3 +128,26 @@ def test_mcp_client_counts_either_name_once():
          ("c", "mcp.server", "mcp"), ("old", "mcp.client", "mcp")],
     )
     assert analyse(con)["mcp_client"] == 2
+
+
+def test_own_packages_and_copies_left_out():
+    con = build(
+        [(n, "2026-03-05", 0) for n in ["app", "langchain-openai", "langchain_x", "mcp-server-git",
+                                        "iflow-mcp_foo", "requests-toolbelt", "pydantic-settings", "langchainish"]],
+        [("app", "langchain.x", "langchain"), ("langchain-openai", "langchain_core.x", "langchain_core"),
+         ("langchain_x", "langchain.x", "langchain"), ("langchainish", "langchain.x", "langchain"),
+         ("app", "mcp.server", "mcp"), ("mcp-server-git", "mcp.server", "mcp"),
+         ("iflow-mcp_foo", "mcp.server", "mcp"),
+         ("app", "requests.get", "requests"), ("requests-toolbelt", "requests.get", "requests"),
+         ("pydantic-settings", "pydantic.field_validator", "pydantic"),
+         ("app", "pydantic.field_validator", "pydantic")],
+    )
+    out = analyse(con)
+    sdks = dict(out["sdks"])
+    assert sdks["langchain"] == 2  # app and langchainish; not langchain-openai or langchain_x
+    assert sdks["mcp"] == 1  # app only
+    assert dict(out["mcp_names"])["mcp.server"] == 1
+    assert dict((h[0], h[1]) for h in out["http"])["requests"] == 1
+    assert out["pydantic"]["v2"][0] == 1
+    assert out["own_dropped"]["langchain"] == {"own": 2, "copies": 0}
+    assert out["own_dropped"]["mcp"] == {"own": 1, "copies": 1}

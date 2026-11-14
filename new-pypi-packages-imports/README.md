@@ -38,6 +38,8 @@ It makes one request to PyPI every 0.2 seconds, so it takes a few minutes. The s
 
 - **Latest release only.** The index holds the latest release of each project, so a month's count is projects whose latest release came out that month, not uploads.
 - **Static imports only.** The scanner reads import statements and attribute access on imported names. Imports through `importlib` or `__import__`, and names reached through variables, are missed. A project's own modules are never counted.
-- **No filtering.** Every project with a release in the year counts, including test uploads and very small packages.
+- **Own packages left out.** A project whose normalised name is a library's name, or starts with it followed by `-`, is not counted for that library: `langchain-openai` is not a LangChain user and `mcp-server-git` is not an MCP SDK user. `own_dropped` in the results gives how many each library loses. The same rule is used for the AI tools posts in this repository.
+- **Copies left out.** The 2,144 `iflow-mcp*` projects are copies of other people's MCP servers under one prefix, and are left out of every count. The totals (`projects_all`, `projects_recent`) still include them.
+- **No other filtering.** Every other project with a release in the year counts, including test uploads and very small packages.
 - **Recent projects.** The SDK and month numbers use projects released on or after 13 November 2025. The requests/httpx and pydantic numbers use every indexed project, and also give a share weighted by downloads.
 - **Downloads.** Download counts are for the 30 days before the scan, from ClickHouse's public PyPI dataset, and exist only for the 60,000 most downloaded projects.
