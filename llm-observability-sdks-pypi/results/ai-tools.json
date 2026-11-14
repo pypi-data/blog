@@ -1,0 +1,2088 @@
+{
+ "snapshot": "2026-11-13",
+ "hf_revision": "9d81d70d6519d77f4dee4811b3e3a5d88379c17d",
+ "projects_all": 354763,
+ "copies_dropped": 2144,
+ "projects_by_month": {
+  "2025-11": 7696,
+  "2025-12": 12751,
+  "2026-01": 14373,
+  "2026-02": 17320,
+  "2026-03": 22557,
+  "2026-04": 23085,
+  "2026-05": 22545,
+  "2026-06": 23467,
+  "2026-07": 26119,
+  "2026-08": 27684,
+  "2026-09": 33260,
+  "2026-10": 56685
+ },
+ "tools": {
+  "observability": [
+   {
+    "tool": "Langfuse",
+    "group": "observability",
+    "package": "langfuse",
+    "projects": 584,
+    "third_party": 571,
+    "own_family": 13,
+    "top60k": 90,
+    "package_downloads_30d": 2615985,
+    "package_downloads_month": 31213932,
+    "by_month": {
+     "2025-11": 11,
+     "2025-12": 15,
+     "2026-01": 16,
+     "2026-02": 29,
+     "2026-03": 34,
+     "2026-04": 38,
+     "2026-05": 37,
+     "2026-06": 43,
+     "2026-07": 47,
+     "2026-08": 47,
+     "2026-09": 55,
+     "2026-10": 91
+    }
+   },
+   {
+    "tool": "LangSmith",
+    "group": "observability",
+    "package": "langsmith",
+    "projects": 281,
+    "third_party": 278,
+    "own_family": 3,
+    "top60k": 48,
+    "package_downloads_30d": 7984011,
+    "package_downloads_month": 93482226,
+    "by_month": {
+     "2025-11": 4,
+     "2025-12": 14,
+     "2026-01": 11,
+     "2026-02": 15,
+     "2026-03": 15,
+     "2026-04": 19,
+     "2026-05": 16,
+     "2026-06": 22,
+     "2026-07": 18,
+     "2026-08": 16,
+     "2026-09": 23,
+     "2026-10": 44
+    }
+   },
+   {
+    "tool": "Arize Phoenix / OpenInference",
+    "group": "observability",
+    "package": "arize-phoenix",
+    "projects": 275,
+    "third_party": 266,
+    "own_family": 9,
+    "top60k": 73,
+    "package_downloads_30d": 543340,
+    "package_downloads_month": 625192,
+    "by_month": {
+     "2025-11": 6,
+     "2025-12": 4,
+     "2026-01": 6,
+     "2026-02": 14,
+     "2026-03": 18,
+     "2026-04": 16,
+     "2026-05": 19,
+     "2026-06": 14,
+     "2026-07": 19,
+     "2026-08": 20,
+     "2026-09": 25,
+     "2026-10": 48
+    }
+   },
+   {
+    "tool": "Pydantic Logfire",
+    "group": "observability",
+    "package": "logfire",
+    "projects": 241,
+    "third_party": 239,
+    "own_family": 2,
+    "top60k": 74,
+    "package_downloads_30d": 5565923,
+    "package_downloads_month": 18810374,
+    "by_month": {
+     "2025-11": 2,
+     "2025-12": 10,
+     "2026-01": 13,
+     "2026-02": 11,
+     "2026-03": 16,
+     "2026-04": 11,
+     "2026-05": 8,
+     "2026-06": 11,
+     "2026-07": 14,
+     "2026-08": 13,
+     "2026-09": 22,
+     "2026-10": 48
+    }
+   },
+   {
+    "tool": "OpenLLMetry (Traceloop)",
+    "group": "observability",
+    "package": "traceloop-sdk",
+    "projects": 154,
+    "third_party": 152,
+    "own_family": 2,
+    "top60k": 44,
+    "package_downloads_30d": 265482,
+    "package_downloads_month": 2066809,
+    "by_month": {
+     "2025-11": 3,
+     "2025-12": 7,
+     "2026-01": 7,
+     "2026-02": 8,
+     "2026-03": 13,
+     "2026-04": 14,
+     "2026-05": 7,
+     "2026-06": 5,
+     "2026-07": 14,
+     "2026-08": 5,
+     "2026-09": 8,
+     "2026-10": 14
+    }
+   },
+   {
+    "tool": "MLflow Tracing",
+    "group": "observability",
+    "package": "mlflow",
+    "projects": 128,
+    "third_party": 121,
+    "own_family": 7,
+    "top60k": 32,
+    "package_downloads_30d": 6688415,
+    "package_downloads_month": 21601230,
+    "by_month": {
+     "2025-11": 1,
+     "2025-12": 10,
+     "2026-01": 5,
+     "2026-02": 2,
+     "2026-03": 7,
+     "2026-04": 4,
+     "2026-05": 11,
+     "2026-06": 9,
+     "2026-07": 6,
+     "2026-08": 4,
+     "2026-09": 14,
+     "2026-10": 20
+    }
+   },
+   {
+    "tool": "W&B Weave",
+    "group": "observability",
+    "package": "weave",
+    "projects": 55,
+    "third_party": 54,
+    "own_family": 1,
+    "top60k": 12,
+    "package_downloads_30d": 102021,
+    "package_downloads_month": 752204,
+    "by_month": {
+     "2025-11": 1,
+     "2025-12": 1,
+     "2026-01": 5,
+     "2026-02": 5,
+     "2026-03": 2,
+     "2026-04": 3,
+     "2026-05": 1,
+     "2026-06": 6,
+     "2026-07": 1,
+     "2026-08": 2,
+     "2026-09": 7,
+     "2026-10": 13
+    }
+   },
+   {
+    "tool": "Comet Opik",
+    "group": "observability",
+    "package": "opik",
+    "projects": 53,
+    "third_party": 50,
+    "own_family": 3,
+    "top60k": 12,
+    "package_downloads_30d": 266061,
+    "package_downloads_month": 2696884,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 4,
+     "2026-01": 4,
+     "2026-02": 5,
+     "2026-03": 6,
+     "2026-04": 4,
+     "2026-05": 1,
+     "2026-06": 3,
+     "2026-07": 2,
+     "2026-08": 4,
+     "2026-09": 3,
+     "2026-10": 9
+    }
+   },
+   {
+    "tool": "AgentOps",
+    "group": "observability",
+    "package": "agentops",
+    "projects": 26,
+    "third_party": 26,
+    "own_family": 0,
+    "top60k": 9,
+    "package_downloads_30d": 73364,
+    "package_downloads_month": 88681,
+    "by_month": {
+     "2025-11": 1,
+     "2025-12": 1,
+     "2026-01": 3,
+     "2026-02": 2,
+     "2026-03": 2,
+     "2026-04": 1,
+     "2026-05": 0,
+     "2026-06": 1,
+     "2026-07": 0,
+     "2026-08": 2,
+     "2026-09": 1,
+     "2026-10": 4
+    }
+   },
+   {
+    "tool": "Braintrust",
+    "group": "observability",
+    "package": "braintrust",
+    "projects": 29,
+    "third_party": 25,
+    "own_family": 4,
+    "top60k": 6,
+    "package_downloads_30d": 6060585,
+    "package_downloads_month": 8391478,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 2,
+     "2026-01": 0,
+     "2026-02": 1,
+     "2026-03": 3,
+     "2026-04": 3,
+     "2026-05": 4,
+     "2026-06": 2,
+     "2026-07": 1,
+     "2026-08": 2,
+     "2026-09": 2,
+     "2026-10": 4
+    }
+   },
+   {
+    "tool": "Laminar",
+    "group": "observability",
+    "package": "lmnr",
+    "projects": 20,
+    "third_party": 20,
+    "own_family": 0,
+    "top60k": 4,
+    "package_downloads_30d": 1569384,
+    "package_downloads_month": 4258368,
+    "by_month": {
+     "2025-11": 1,
+     "2025-12": 0,
+     "2026-01": 2,
+     "2026-02": 0,
+     "2026-03": 4,
+     "2026-04": 0,
+     "2026-05": 2,
+     "2026-06": 2,
+     "2026-07": 1,
+     "2026-08": 3,
+     "2026-09": 2,
+     "2026-10": 0
+    }
+   },
+   {
+    "tool": "LangWatch",
+    "group": "observability",
+    "package": "langwatch",
+    "projects": 14,
+    "third_party": 13,
+    "own_family": 1,
+    "top60k": 2,
+    "package_downloads_30d": 36051,
+    "package_downloads_month": 404588,
+    "by_month": {
+     "2025-11": 1,
+     "2025-12": 2,
+     "2026-01": 0,
+     "2026-02": 2,
+     "2026-03": 1,
+     "2026-04": 0,
+     "2026-05": 1,
+     "2026-06": 1,
+     "2026-07": 1,
+     "2026-08": 0,
+     "2026-09": 0,
+     "2026-10": 2
+    }
+   },
+   {
+    "tool": "OpenLIT",
+    "group": "observability",
+    "package": "openlit",
+    "projects": 13,
+    "third_party": 13,
+    "own_family": 0,
+    "top60k": 3,
+    "package_downloads_30d": 33939,
+    "package_downloads_month": 392616,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 1,
+     "2026-03": 1,
+     "2026-04": 2,
+     "2026-05": 1,
+     "2026-06": 0,
+     "2026-07": 1,
+     "2026-08": 0,
+     "2026-09": 0,
+     "2026-10": 4
+    }
+   },
+   {
+    "tool": "TruLens",
+    "group": "observability",
+    "package": "trulens",
+    "projects": 12,
+    "third_party": 11,
+    "own_family": 1,
+    "top60k": 3,
+    "package_downloads_30d": 17139,
+    "package_downloads_month": 25281,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 0,
+     "2026-04": 0,
+     "2026-05": 1,
+     "2026-06": 1,
+     "2026-07": 3,
+     "2026-08": 1,
+     "2026-09": 0,
+     "2026-10": 3
+    }
+   },
+   {
+    "tool": "Literal AI",
+    "group": "observability",
+    "package": "literalai",
+    "projects": 10,
+    "third_party": 10,
+    "own_family": 0,
+    "top60k": 3,
+    "package_downloads_30d": 148309,
+    "package_downloads_month": 484101,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 1,
+     "2026-01": 1,
+     "2026-02": 2,
+     "2026-03": 0,
+     "2026-04": 1,
+     "2026-05": 1,
+     "2026-06": 0,
+     "2026-07": 0,
+     "2026-08": 3,
+     "2026-09": 0,
+     "2026-10": 1
+    }
+   },
+   {
+    "tool": "Lunary",
+    "group": "observability",
+    "package": "lunary",
+    "projects": 10,
+    "third_party": 10,
+    "own_family": 0,
+    "top60k": 5,
+    "package_downloads_30d": 43226,
+    "package_downloads_month": 151053,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 2,
+     "2026-04": 0,
+     "2026-05": 0,
+     "2026-06": 1,
+     "2026-07": 0,
+     "2026-08": 0,
+     "2026-09": 2,
+     "2026-10": 1
+    }
+   },
+   {
+    "tool": "Datadog LLM Observability",
+    "group": "observability",
+    "package": "ddtrace",
+    "projects": 6,
+    "third_party": 6,
+    "own_family": 0,
+    "top60k": 2,
+    "package_downloads_30d": 25795399,
+    "package_downloads_month": 48026680,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 2,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 0,
+     "2026-04": 0,
+     "2026-05": 1,
+     "2026-06": 0,
+     "2026-07": 0,
+     "2026-08": 0,
+     "2026-09": 0,
+     "2026-10": 1
+    }
+   },
+   {
+    "tool": "PromptLayer",
+    "group": "observability",
+    "package": "promptlayer",
+    "projects": 6,
+    "third_party": 6,
+    "own_family": 0,
+    "top60k": 4,
+    "package_downloads_30d": 28636,
+    "package_downloads_month": 102229,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 2,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 0,
+     "2026-04": 1,
+     "2026-05": 1,
+     "2026-06": 0,
+     "2026-07": 0,
+     "2026-08": 1,
+     "2026-09": 0,
+     "2026-10": 0
+    }
+   },
+   {
+    "tool": "HoneyHive",
+    "group": "observability",
+    "package": "honeyhive",
+    "projects": 5,
+    "third_party": 3,
+    "own_family": 2,
+    "top60k": 1,
+    "package_downloads_30d": 10532,
+    "package_downloads_month": 11731,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 0,
+     "2026-04": 0,
+     "2026-05": 0,
+     "2026-06": 0,
+     "2026-07": 1,
+     "2026-08": 1,
+     "2026-09": 2,
+     "2026-10": 0
+    }
+   },
+   {
+    "tool": "Galileo",
+    "group": "observability",
+    "package": "galileo",
+    "projects": 3,
+    "third_party": 2,
+    "own_family": 1,
+    "top60k": 1,
+    "package_downloads_30d": 48765,
+    "package_downloads_month": 62297,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 0,
+     "2026-04": 0,
+     "2026-05": 1,
+     "2026-06": 0,
+     "2026-07": 0,
+     "2026-08": 0,
+     "2026-09": 1,
+     "2026-10": 0
+    }
+   },
+   {
+    "tool": "Langtrace",
+    "group": "observability",
+    "package": "langtrace-python-sdk",
+    "projects": 2,
+    "third_party": 2,
+    "own_family": 0,
+    "top60k": 0,
+    "package_downloads_30d": null,
+    "package_downloads_month": 12292,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 1,
+     "2026-03": 0,
+     "2026-04": 0,
+     "2026-05": 0,
+     "2026-06": 0,
+     "2026-07": 0,
+     "2026-08": 0,
+     "2026-09": 0,
+     "2026-10": 1
+    }
+   },
+   {
+    "tool": "Helicone",
+    "group": "observability",
+    "package": "helicone",
+    "projects": 0,
+    "third_party": 0,
+    "own_family": 0,
+    "top60k": 0,
+    "package_downloads_30d": null,
+    "package_downloads_month": 856,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 0,
+     "2026-04": 0,
+     "2026-05": 0,
+     "2026-06": 0,
+     "2026-07": 0,
+     "2026-08": 0,
+     "2026-09": 0,
+     "2026-10": 0
+    }
+   }
+  ],
+  "gateways_evals": [
+   {
+    "tool": "DeepEval",
+    "group": "gateways_evals",
+    "package": "deepeval",
+    "projects": 147,
+    "third_party": 143,
+    "own_family": 4,
+    "top60k": 32,
+    "package_downloads_30d": 1752097,
+    "package_downloads_month": 3295528,
+    "by_month": {
+     "2025-11": 1,
+     "2025-12": 1,
+     "2026-01": 4,
+     "2026-02": 2,
+     "2026-03": 6,
+     "2026-04": 6,
+     "2026-05": 9,
+     "2026-06": 10,
+     "2026-07": 16,
+     "2026-08": 14,
+     "2026-09": 14,
+     "2026-10": 23
+    }
+   },
+   {
+    "tool": "Ragas",
+    "group": "gateways_evals",
+    "package": "ragas",
+    "projects": 148,
+    "third_party": 143,
+    "own_family": 5,
+    "top60k": 27,
+    "package_downloads_30d": 581332,
+    "package_downloads_month": 1262036,
+    "by_month": {
+     "2025-11": 3,
+     "2025-12": 5,
+     "2026-01": 6,
+     "2026-02": 7,
+     "2026-03": 6,
+     "2026-04": 11,
+     "2026-05": 11,
+     "2026-06": 10,
+     "2026-07": 13,
+     "2026-08": 9,
+     "2026-09": 13,
+     "2026-10": 22
+    }
+   },
+   {
+    "tool": "Portkey",
+    "group": "gateways_evals",
+    "package": "portkey-ai",
+    "projects": 35,
+    "third_party": 35,
+    "own_family": 0,
+    "top60k": 9,
+    "package_downloads_30d": 464056,
+    "package_downloads_month": 4552947,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 2,
+     "2026-01": 2,
+     "2026-02": 3,
+     "2026-03": 3,
+     "2026-04": 1,
+     "2026-05": 4,
+     "2026-06": 3,
+     "2026-07": 2,
+     "2026-08": 1,
+     "2026-09": 1,
+     "2026-10": 8
+    }
+   }
+  ],
+  "frameworks": [
+   {
+    "tool": "LangChain",
+    "group": "frameworks",
+    "package": "langchain",
+    "projects": 7762,
+    "third_party": 6779,
+    "own_family": 983,
+    "top60k": 721,
+    "package_downloads_30d": 14775000,
+    "package_downloads_month": 156867095,
+    "by_month": {
+     "2025-11": 121,
+     "2025-12": 525,
+     "2026-01": 269,
+     "2026-02": 381,
+     "2026-03": 562,
+     "2026-04": 619,
+     "2026-05": 557,
+     "2026-06": 547,
+     "2026-07": 573,
+     "2026-08": 542,
+     "2026-09": 630,
+     "2026-10": 1204
+    }
+   },
+   {
+    "tool": "LangGraph",
+    "group": "frameworks",
+    "package": "langgraph",
+    "projects": 2509,
+    "third_party": 2417,
+    "own_family": 92,
+    "top60k": 288,
+    "package_downloads_30d": 5208146,
+    "package_downloads_month": 58774245,
+    "by_month": {
+     "2025-11": 35,
+     "2025-12": 66,
+     "2026-01": 87,
+     "2026-02": 118,
+     "2026-03": 150,
+     "2026-04": 186,
+     "2026-05": 176,
+     "2026-06": 189,
+     "2026-07": 196,
+     "2026-08": 223,
+     "2026-09": 229,
+     "2026-10": 393
+    }
+   },
+   {
+    "tool": "Pydantic AI",
+    "group": "frameworks",
+    "package": "pydantic-ai",
+    "projects": 1291,
+    "third_party": 1203,
+    "own_family": 88,
+    "top60k": 224,
+    "package_downloads_30d": 2983496,
+    "package_downloads_month": 6888240,
+    "by_month": {
+     "2025-11": 15,
+     "2025-12": 24,
+     "2026-01": 41,
+     "2026-02": 50,
+     "2026-03": 73,
+     "2026-04": 111,
+     "2026-05": 71,
+     "2026-06": 65,
+     "2026-07": 83,
+     "2026-08": 86,
+     "2026-09": 117,
+     "2026-10": 245
+    }
+   },
+   {
+    "tool": "CrewAI",
+    "group": "frameworks",
+    "package": "crewai",
+    "projects": 1344,
+    "third_party": 1184,
+    "own_family": 160,
+    "top60k": 127,
+    "package_downloads_30d": 1436507,
+    "package_downloads_month": 2629192,
+    "by_month": {
+     "2025-11": 10,
+     "2025-12": 19,
+     "2026-01": 22,
+     "2026-02": 63,
+     "2026-03": 105,
+     "2026-04": 134,
+     "2026-05": 99,
+     "2026-06": 98,
+     "2026-07": 112,
+     "2026-08": 93,
+     "2026-09": 119,
+     "2026-10": 246
+    }
+   },
+   {
+    "tool": "LlamaIndex",
+    "group": "frameworks",
+    "package": "llama-index-core",
+    "projects": 1169,
+    "third_party": 1111,
+    "own_family": 58,
+    "top60k": 156,
+    "package_downloads_30d": 1968336,
+    "package_downloads_month": 5774864,
+    "by_month": {
+     "2025-11": 15,
+     "2025-12": 36,
+     "2026-01": 37,
+     "2026-02": 48,
+     "2026-03": 94,
+     "2026-04": 86,
+     "2026-05": 76,
+     "2026-06": 77,
+     "2026-07": 93,
+     "2026-08": 91,
+     "2026-09": 100,
+     "2026-10": 210
+    }
+   },
+   {
+    "tool": "Claude Agent SDK",
+    "group": "frameworks",
+    "package": "claude-agent-sdk",
+    "projects": 975,
+    "third_party": 973,
+    "own_family": 2,
+    "top60k": 159,
+    "package_downloads_30d": 19101560,
+    "package_downloads_month": 36291587,
+    "by_month": {
+     "2025-11": 4,
+     "2025-12": 19,
+     "2026-01": 29,
+     "2026-02": 47,
+     "2026-03": 84,
+     "2026-04": 61,
+     "2026-05": 72,
+     "2026-06": 61,
+     "2026-07": 68,
+     "2026-08": 72,
+     "2026-09": 74,
+     "2026-10": 153
+    }
+   },
+   {
+    "tool": "OpenAI Agents SDK",
+    "group": "frameworks",
+    "package": "openai-agents",
+    "projects": 868,
+    "third_party": 840,
+    "own_family": 28,
+    "top60k": 126,
+    "package_downloads_30d": 10682600,
+    "package_downloads_month": 19169518,
+    "by_month": {
+     "2025-11": 12,
+     "2025-12": 14,
+     "2026-01": 11,
+     "2026-02": 28,
+     "2026-03": 30,
+     "2026-04": 60,
+     "2026-05": 42,
+     "2026-06": 62,
+     "2026-07": 65,
+     "2026-08": 64,
+     "2026-09": 90,
+     "2026-10": 190
+    }
+   },
+   {
+    "tool": "Google ADK",
+    "group": "frameworks",
+    "package": "google-adk",
+    "projects": 553,
+    "third_party": 546,
+    "own_family": 7,
+    "top60k": 101,
+    "package_downloads_30d": 7966235,
+    "package_downloads_month": 10678997,
+    "by_month": {
+     "2025-11": 5,
+     "2025-12": 11,
+     "2026-01": 9,
+     "2026-02": 18,
+     "2026-03": 28,
+     "2026-04": 34,
+     "2026-05": 23,
+     "2026-06": 38,
+     "2026-07": 37,
+     "2026-08": 49,
+     "2026-09": 46,
+     "2026-10": 130
+    }
+   },
+   {
+    "tool": "Haystack",
+    "group": "frameworks",
+    "package": "haystack-ai",
+    "projects": 398,
+    "third_party": 379,
+    "own_family": 19,
+    "top60k": 82,
+    "package_downloads_30d": 402637,
+    "package_downloads_month": 623375,
+    "by_month": {
+     "2025-11": 4,
+     "2025-12": 3,
+     "2026-01": 9,
+     "2026-02": 6,
+     "2026-03": 18,
+     "2026-04": 14,
+     "2026-05": 9,
+     "2026-06": 16,
+     "2026-07": 21,
+     "2026-08": 25,
+     "2026-09": 26,
+     "2026-10": 145
+    }
+   },
+   {
+    "tool": "DSPy",
+    "group": "frameworks",
+    "package": "dspy",
+    "projects": 341,
+    "third_party": 310,
+    "own_family": 31,
+    "top60k": 47,
+    "package_downloads_30d": 4413225,
+    "package_downloads_month": 5636400,
+    "by_month": {
+     "2025-11": 9,
+     "2025-12": 20,
+     "2026-01": 16,
+     "2026-02": 15,
+     "2026-03": 26,
+     "2026-04": 22,
+     "2026-05": 28,
+     "2026-06": 20,
+     "2026-07": 25,
+     "2026-08": 17,
+     "2026-09": 29,
+     "2026-10": 47
+    }
+   },
+   {
+    "tool": "Deep Agents",
+    "group": "frameworks",
+    "package": "deepagents",
+    "projects": 327,
+    "third_party": 309,
+    "own_family": 18,
+    "top60k": 55,
+    "package_downloads_30d": 4457255,
+    "package_downloads_month": 8750759,
+    "by_month": {
+     "2025-11": 5,
+     "2025-12": 5,
+     "2026-01": 5,
+     "2026-02": 8,
+     "2026-03": 19,
+     "2026-04": 19,
+     "2026-05": 14,
+     "2026-06": 23,
+     "2026-07": 32,
+     "2026-08": 22,
+     "2026-09": 29,
+     "2026-10": 74
+    }
+   },
+   {
+    "tool": "Strands Agents",
+    "group": "frameworks",
+    "package": "strands-agents",
+    "projects": 378,
+    "third_party": 276,
+    "own_family": 102,
+    "top60k": 64,
+    "package_downloads_30d": 7894499,
+    "package_downloads_month": 38256992,
+    "by_month": {
+     "2025-11": 4,
+     "2025-12": 7,
+     "2026-01": 13,
+     "2026-02": 12,
+     "2026-03": 21,
+     "2026-04": 17,
+     "2026-05": 17,
+     "2026-06": 21,
+     "2026-07": 41,
+     "2026-08": 19,
+     "2026-09": 34,
+     "2026-10": 81
+    }
+   },
+   {
+    "tool": "AutoGen (Microsoft)",
+    "group": "frameworks",
+    "package": "autogen-agentchat",
+    "projects": 281,
+    "third_party": 263,
+    "own_family": 18,
+    "top60k": 32,
+    "package_downloads_30d": 369480,
+    "package_downloads_month": 425456,
+    "by_month": {
+     "2025-11": 2,
+     "2025-12": 5,
+     "2026-01": 7,
+     "2026-02": 6,
+     "2026-03": 23,
+     "2026-04": 27,
+     "2026-05": 19,
+     "2026-06": 21,
+     "2026-07": 15,
+     "2026-08": 18,
+     "2026-09": 31,
+     "2026-10": 56
+    }
+   },
+   {
+    "tool": "AG2 and classic AutoGen",
+    "group": "frameworks",
+    "package": "ag2",
+    "projects": 260,
+    "third_party": 246,
+    "own_family": 14,
+    "top60k": 28,
+    "package_downloads_30d": 122690,
+    "package_downloads_month": 215889,
+    "by_month": {
+     "2025-11": 5,
+     "2025-12": 6,
+     "2026-01": 9,
+     "2026-02": 15,
+     "2026-03": 15,
+     "2026-04": 33,
+     "2026-05": 22,
+     "2026-06": 23,
+     "2026-07": 28,
+     "2026-08": 8,
+     "2026-09": 18,
+     "2026-10": 34
+    }
+   },
+   {
+    "tool": "Agno",
+    "group": "frameworks",
+    "package": "agno",
+    "projects": 229,
+    "third_party": 210,
+    "own_family": 19,
+    "top60k": 38,
+    "package_downloads_30d": 1791236,
+    "package_downloads_month": 2242183,
+    "by_month": {
+     "2025-11": 6,
+     "2025-12": 7,
+     "2026-01": 8,
+     "2026-02": 9,
+     "2026-03": 19,
+     "2026-04": 14,
+     "2026-05": 15,
+     "2026-06": 12,
+     "2026-07": 17,
+     "2026-08": 17,
+     "2026-09": 20,
+     "2026-10": 38
+    }
+   },
+   {
+    "tool": "smolagents",
+    "group": "frameworks",
+    "package": "smolagents",
+    "projects": 183,
+    "third_party": 170,
+    "own_family": 13,
+    "top60k": 39,
+    "package_downloads_30d": 160061,
+    "package_downloads_month": 709647,
+    "by_month": {
+     "2025-11": 6,
+     "2025-12": 3,
+     "2026-01": 3,
+     "2026-02": 9,
+     "2026-03": 16,
+     "2026-04": 13,
+     "2026-05": 10,
+     "2026-06": 10,
+     "2026-07": 12,
+     "2026-08": 15,
+     "2026-09": 16,
+     "2026-10": 28
+    }
+   },
+   {
+    "tool": "Microsoft Agent Framework",
+    "group": "frameworks",
+    "package": "agent-framework",
+    "projects": 228,
+    "third_party": 168,
+    "own_family": 60,
+    "top60k": 34,
+    "package_downloads_30d": 117532,
+    "package_downloads_month": 198880,
+    "by_month": {
+     "2025-11": 1,
+     "2025-12": 5,
+     "2026-01": 2,
+     "2026-02": 3,
+     "2026-03": 10,
+     "2026-04": 16,
+     "2026-05": 9,
+     "2026-06": 11,
+     "2026-07": 4,
+     "2026-08": 9,
+     "2026-09": 18,
+     "2026-10": 45
+    }
+   },
+   {
+    "tool": "Semantic Kernel",
+    "group": "frameworks",
+    "package": "semantic-kernel",
+    "projects": 114,
+    "third_party": 109,
+    "own_family": 5,
+    "top60k": 20,
+    "package_downloads_30d": 149816,
+    "package_downloads_month": 341957,
+    "by_month": {
+     "2025-11": 2,
+     "2025-12": 2,
+     "2026-01": 0,
+     "2026-02": 7,
+     "2026-03": 8,
+     "2026-04": 8,
+     "2026-05": 6,
+     "2026-06": 6,
+     "2026-07": 7,
+     "2026-08": 12,
+     "2026-09": 17,
+     "2026-10": 18
+    }
+   },
+   {
+    "tool": "AgentScope",
+    "group": "frameworks",
+    "package": "agentscope",
+    "projects": 60,
+    "third_party": 56,
+    "own_family": 4,
+    "top60k": 9,
+    "package_downloads_30d": 234548,
+    "package_downloads_month": 342440,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 3,
+     "2026-02": 1,
+     "2026-03": 5,
+     "2026-04": 12,
+     "2026-05": 4,
+     "2026-06": 6,
+     "2026-07": 4,
+     "2026-08": 2,
+     "2026-09": 7,
+     "2026-10": 5
+    }
+   },
+   {
+    "tool": "Letta",
+    "group": "frameworks",
+    "package": "letta",
+    "projects": 38,
+    "third_party": 36,
+    "own_family": 2,
+    "top60k": 4,
+    "package_downloads_30d": 0,
+    "package_downloads_month": 8251,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 1,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 2,
+     "2026-04": 3,
+     "2026-05": 5,
+     "2026-06": 4,
+     "2026-07": 2,
+     "2026-08": 3,
+     "2026-09": 1,
+     "2026-10": 6
+    }
+   },
+   {
+    "tool": "CAMEL",
+    "group": "frameworks",
+    "package": "camel-ai",
+    "projects": 29,
+    "third_party": 24,
+    "own_family": 5,
+    "top60k": 3,
+    "package_downloads_30d": 55067,
+    "package_downloads_month": 63323,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 2,
+     "2026-03": 2,
+     "2026-04": 1,
+     "2026-05": 1,
+     "2026-06": 1,
+     "2026-07": 4,
+     "2026-08": 2,
+     "2026-09": 4,
+     "2026-10": 5
+    }
+   },
+   {
+    "tool": "Burr",
+    "group": "frameworks",
+    "package": "burr",
+    "projects": 10,
+    "third_party": 10,
+    "own_family": 0,
+    "top60k": 1,
+    "package_downloads_30d": 17044,
+    "package_downloads_month": 20354,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 0,
+     "2026-04": 0,
+     "2026-05": 2,
+     "2026-06": 0,
+     "2026-07": 2,
+     "2026-08": 2,
+     "2026-09": 0,
+     "2026-10": 4
+    }
+   },
+   {
+    "tool": "Griptape",
+    "group": "frameworks",
+    "package": "griptape",
+    "projects": 8,
+    "third_party": 7,
+    "own_family": 1,
+    "top60k": 4,
+    "package_downloads_30d": 41341,
+    "package_downloads_month": 61222,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 1,
+     "2026-02": 0,
+     "2026-03": 0,
+     "2026-04": 0,
+     "2026-05": 0,
+     "2026-06": 0,
+     "2026-07": 0,
+     "2026-08": 0,
+     "2026-09": 0,
+     "2026-10": 2
+    }
+   },
+   {
+    "tool": "Langroid",
+    "group": "frameworks",
+    "package": "langroid",
+    "projects": 5,
+    "third_party": 5,
+    "own_family": 0,
+    "top60k": 1,
+    "package_downloads_30d": 0,
+    "package_downloads_month": 16832,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 1,
+     "2026-03": 0,
+     "2026-04": 1,
+     "2026-05": 0,
+     "2026-06": 0,
+     "2026-07": 0,
+     "2026-08": 0,
+     "2026-09": 0,
+     "2026-10": 3
+    }
+   },
+   {
+    "tool": "MetaGPT",
+    "group": "frameworks",
+    "package": "metagpt",
+    "projects": 4,
+    "third_party": 4,
+    "own_family": 0,
+    "top60k": 1,
+    "package_downloads_30d": 1562,
+    "package_downloads_month": 2826,
+    "by_month": {
+     "2025-11": 0,
+     "2025-12": 0,
+     "2026-01": 0,
+     "2026-02": 0,
+     "2026-03": 0,
+     "2026-04": 1,
+     "2026-05": 1,
+     "2026-06": 1,
+     "2026-07": 0,
+     "2026-08": 0,
+     "2026-09": 0,
+     "2026-10": 1
+    }
+   }
+  ],
+  "llm_sdks": [
+   {
+    "tool": "MCP SDK",
+    "group": "llm_sdks",
+    "package": "mcp",
+    "projects": 21411,
+    "third_party": 20056,
+    "own_family": 1355,
+    "top60k": 2018,
+    "package_downloads_30d": 96060690,
+    "package_downloads_month": 318680010,
+    "by_month": {
+     "2025-11": 202,
+     "2025-12": 538,
+     "2026-01": 620,
+     "2026-02": 773,
+     "2026-03": 1525,
+     "2026-04": 1414,
+     "2026-05": 1411,
+     "2026-06": 1657,
+     "2026-07": 1713,
+     "2026-08": 1823,
+     "2026-09": 2119,
+     "2026-10": 3681
+    }
+   },
+   {
+    "tool": "OpenAI SDK",
+    "group": "llm_sdks",
+    "package": "openai",
+    "projects": 12253,
+    "third_party": 12215,
+    "own_family": 38,
+    "top60k": 1339,
+    "package_downloads_30d": 202488268,
+    "package_downloads_month": 376229755,
+    "by_month": {
+     "2025-11": 243,
+     "2025-12": 428,
+     "2026-01": 501,
+     "2026-02": 642,
+     "2026-03": 1031,
+     "2026-04": 1013,
+     "2026-05": 1034,
+     "2026-06": 976,
+     "2026-07": 969,
+     "2026-08": 975,
+     "2026-09": 1030,
+     "2026-10": 1668
+    }
+   },
+   {
+    "tool": "Anthropic SDK",
+    "group": "llm_sdks",
+    "package": "anthropic",
+    "projects": 7765,
+    "third_party": 7760,
+    "own_family": 5,
+    "top60k": 748,
+    "package_downloads_30d": 151993146,
+    "package_downloads_month": 204631596,
+    "by_month": {
+     "2025-11": 85,
+     "2025-12": 169,
+     "2026-01": 203,
+     "2026-02": 354,
+     "2026-03": 699,
+     "2026-04": 722,
+     "2026-05": 725,
+     "2026-06": 679,
+     "2026-07": 683,
+     "2026-08": 599,
+     "2026-09": 666,
+     "2026-10": 1035
+    }
+   },
+   {
+    "tool": "LiteLLM",
+    "group": "llm_sdks",
+    "package": "litellm",
+    "projects": 3014,
+    "third_party": 2988,
+    "own_family": 26,
+    "top60k": 413,
+    "package_downloads_30d": 31988815,
+    "package_downloads_month": 97401315,
+    "by_month": {
+     "2025-11": 39,
+     "2025-12": 81,
+     "2026-01": 95,
+     "2026-02": 158,
+     "2026-03": 241,
+     "2026-04": 263,
+     "2026-05": 232,
+     "2026-06": 224,
+     "2026-07": 251,
+     "2026-08": 232,
+     "2026-09": 252,
+     "2026-10": 473
+    }
+   }
+  ]
+ },
+ "name_counts": {
+  "langfuse.langchain": 117,
+  "langfuse.openai": 50,
+  "langfuse.observe": 54,
+  "logfire.instrument_pydantic_ai": 73
+ },
+ "totals": {
+  "observability_any": 1597,
+  "frameworks_any": 12633,
+  "llm_sdk_any": 17702,
+  "openai_or_anthropic": 14659,
+  "llm_or_framework": 25906,
+  "llm_or_framework_with_obs": 1235,
+  "framework_with_obs": 866,
+  "openai_or_anthropic_no_framework": 11655,
+  "framework_and_llm_sdk": 4429
+ },
+ "obs_with_frameworks": {
+  "Langfuse": {
+   "users": 571,
+   "with_any": 301,
+   "top": [
+    [
+     "LangChain",
+     224
+    ],
+    [
+     "LangGraph",
+     132
+    ],
+    [
+     "Pydantic AI",
+     44
+    ],
+    [
+     "LlamaIndex",
+     35
+    ],
+    [
+     "Deep Agents",
+     31
+    ]
+   ]
+  },
+  "LangSmith": {
+   "users": 278,
+   "with_any": 207,
+   "top": [
+    [
+     "LangChain",
+     172
+    ],
+    [
+     "LangGraph",
+     117
+    ],
+    [
+     "Deep Agents",
+     26
+    ],
+    [
+     "LlamaIndex",
+     23
+    ],
+    [
+     "CrewAI",
+     19
+    ]
+   ]
+  },
+  "Arize Phoenix / OpenInference": {
+   "users": 266,
+   "with_any": 171,
+   "top": [
+    [
+     "LangChain",
+     106
+    ],
+    [
+     "LangGraph",
+     53
+    ],
+    [
+     "Pydantic AI",
+     38
+    ],
+    [
+     "Claude Agent SDK",
+     29
+    ],
+    [
+     "Google ADK",
+     28
+    ]
+   ]
+  },
+  "Pydantic Logfire": {
+   "users": 239,
+   "with_any": 126,
+   "top": [
+    [
+     "Pydantic AI",
+     103
+    ],
+    [
+     "LangChain",
+     25
+    ],
+    [
+     "LangGraph",
+     19
+    ],
+    [
+     "Claude Agent SDK",
+     12
+    ],
+    [
+     "OpenAI Agents SDK",
+     12
+    ]
+   ]
+  },
+  "OpenLLMetry (Traceloop)": {
+   "users": 152,
+   "with_any": 75,
+   "top": [
+    [
+     "LangChain",
+     47
+    ],
+    [
+     "LangGraph",
+     26
+    ],
+    [
+     "LlamaIndex",
+     10
+    ],
+    [
+     "OpenAI Agents SDK",
+     10
+    ],
+    [
+     "Claude Agent SDK",
+     9
+    ]
+   ]
+  },
+  "MLflow Tracing": {
+   "users": 121,
+   "with_any": 61,
+   "top": [
+    [
+     "LangChain",
+     33
+    ],
+    [
+     "LangGraph",
+     23
+    ],
+    [
+     "DSPy",
+     15
+    ],
+    [
+     "LlamaIndex",
+     10
+    ],
+    [
+     "OpenAI Agents SDK",
+     8
+    ]
+   ]
+  },
+  "W&B Weave": {
+   "users": 54,
+   "with_any": 17,
+   "top": [
+    [
+     "LangChain",
+     12
+    ],
+    [
+     "Claude Agent SDK",
+     3
+    ],
+    [
+     "Agno",
+     2
+    ],
+    [
+     "DSPy",
+     2
+    ],
+    [
+     "Google ADK",
+     2
+    ]
+   ]
+  },
+  "Comet Opik": {
+   "users": 50,
+   "with_any": 29,
+   "top": [
+    [
+     "LangChain",
+     26
+    ],
+    [
+     "LangGraph",
+     13
+    ],
+    [
+     "Deep Agents",
+     5
+    ],
+    [
+     "Google ADK",
+     5
+    ],
+    [
+     "Pydantic AI",
+     5
+    ]
+   ]
+  }
+ },
+ "frameworks_with_obs": {
+  "LangChain": {
+   "users": 6779,
+   "with_any": 535,
+   "top": [
+    [
+     "Langfuse",
+     224
+    ],
+    [
+     "LangSmith",
+     172
+    ],
+    [
+     "Arize Phoenix / OpenInference",
+     106
+    ],
+    [
+     "OpenLLMetry (Traceloop)",
+     47
+    ],
+    [
+     "MLflow Tracing",
+     33
+    ]
+   ]
+  },
+  "LangGraph": {
+   "users": 2417,
+   "with_any": 332,
+   "top": [
+    [
+     "Langfuse",
+     132
+    ],
+    [
+     "LangSmith",
+     117
+    ],
+    [
+     "Arize Phoenix / OpenInference",
+     53
+    ],
+    [
+     "OpenLLMetry (Traceloop)",
+     26
+    ],
+    [
+     "MLflow Tracing",
+     23
+    ]
+   ]
+  },
+  "Pydantic AI": {
+   "users": 1203,
+   "with_any": 185,
+   "top": [
+    [
+     "Pydantic Logfire",
+     103
+    ],
+    [
+     "Langfuse",
+     44
+    ],
+    [
+     "Arize Phoenix / OpenInference",
+     38
+    ],
+    [
+     "LangSmith",
+     13
+    ],
+    [
+     "OpenLLMetry (Traceloop)",
+     8
+    ]
+   ]
+  },
+  "CrewAI": {
+   "users": 1184,
+   "with_any": 66,
+   "top": [
+    [
+     "Arize Phoenix / OpenInference",
+     24
+    ],
+    [
+     "Langfuse",
+     24
+    ],
+    [
+     "LangSmith",
+     19
+    ],
+    [
+     "OpenLLMetry (Traceloop)",
+     9
+    ],
+    [
+     "MLflow Tracing",
+     7
+    ]
+   ]
+  },
+  "LlamaIndex": {
+   "users": 1111,
+   "with_any": 98,
+   "top": [
+    [
+     "Langfuse",
+     35
+    ],
+    [
+     "Arize Phoenix / OpenInference",
+     27
+    ],
+    [
+     "LangSmith",
+     23
+    ],
+    [
+     "MLflow Tracing",
+     10
+    ],
+    [
+     "OpenLLMetry (Traceloop)",
+     10
+    ]
+   ]
+  },
+  "Claude Agent SDK": {
+   "users": 973,
+   "with_any": 75,
+   "top": [
+    [
+     "Arize Phoenix / OpenInference",
+     29
+    ],
+    [
+     "Langfuse",
+     26
+    ],
+    [
+     "LangSmith",
+     17
+    ],
+    [
+     "Pydantic Logfire",
+     12
+    ],
+    [
+     "OpenLLMetry (Traceloop)",
+     9
+    ]
+   ]
+  },
+  "OpenAI Agents SDK": {
+   "users": 840,
+   "with_any": 67,
+   "top": [
+    [
+     "Arize Phoenix / OpenInference",
+     28
+    ],
+    [
+     "Langfuse",
+     20
+    ],
+    [
+     "Pydantic Logfire",
+     12
+    ],
+    [
+     "LangSmith",
+     10
+    ],
+    [
+     "OpenLLMetry (Traceloop)",
+     10
+    ]
+   ]
+  },
+  "Google ADK": {
+   "users": 546,
+   "with_any": 57,
+   "top": [
+    [
+     "Arize Phoenix / OpenInference",
+     28
+    ],
+    [
+     "Langfuse",
+     14
+    ],
+    [
+     "LangSmith",
+     13
+    ],
+    [
+     "Pydantic Logfire",
+     7
+    ],
+    [
+     "OpenLLMetry (Traceloop)",
+     6
+    ]
+   ]
+  },
+  "Haystack": {
+   "users": 379,
+   "with_any": 20,
+   "top": [
+    [
+     "Arize Phoenix / OpenInference",
+     8
+    ],
+    [
+     "Langfuse",
+     8
+    ],
+    [
+     "LangSmith",
+     6
+    ],
+    [
+     "TruLens",
+     4
+    ],
+    [
+     "Comet Opik",
+     3
+    ]
+   ]
+  },
+  "DSPy": {
+   "users": 310,
+   "with_any": 55,
+   "top": [
+    [
+     "Arize Phoenix / OpenInference",
+     18
+    ],
+    [
+     "Langfuse",
+     17
+    ],
+    [
+     "MLflow Tracing",
+     15
+    ],
+    [
+     "LangSmith",
+     8
+    ],
+    [
+     "OpenLLMetry (Traceloop)",
+     6
+    ]
+   ]
+  }
+ },
+ "obs_with_llm_sdks": {
+  "Langfuse": {
+   "users": 571,
+   "with_any": 413,
+   "top": [
+    [
+     "OpenAI SDK",
+     302
+    ],
+    [
+     "MCP SDK",
+     226
+    ],
+    [
+     "Anthropic SDK",
+     194
+    ],
+    [
+     "LiteLLM",
+     107
+    ]
+   ]
+  },
+  "LangSmith": {
+   "users": 278,
+   "with_any": 154,
+   "top": [
+    [
+     "OpenAI SDK",
+     113
+    ],
+    [
+     "MCP SDK",
+     78
+    ],
+    [
+     "Anthropic SDK",
+     75
+    ],
+    [
+     "LiteLLM",
+     44
+    ]
+   ]
+  },
+  "Arize Phoenix / OpenInference": {
+   "users": 266,
+   "with_any": 166,
+   "top": [
+    [
+     "OpenAI SDK",
+     120
+    ],
+    [
+     "MCP SDK",
+     72
+    ],
+    [
+     "Anthropic SDK",
+     63
+    ],
+    [
+     "LiteLLM",
+     63
+    ]
+   ]
+  },
+  "Pydantic Logfire": {
+   "users": 239,
+   "with_any": 104,
+   "top": [
+    [
+     "OpenAI SDK",
+     79
+    ],
+    [
+     "MCP SDK",
+     52
+    ],
+    [
+     "Anthropic SDK",
+     47
+    ],
+    [
+     "LiteLLM",
+     15
+    ]
+   ]
+  },
+  "OpenLLMetry (Traceloop)": {
+   "users": 152,
+   "with_any": 85,
+   "top": [
+    [
+     "OpenAI SDK",
+     71
+    ],
+    [
+     "MCP SDK",
+     43
+    ],
+    [
+     "Anthropic SDK",
+     40
+    ],
+    [
+     "LiteLLM",
+     19
+    ]
+   ]
+  },
+  "MLflow Tracing": {
+   "users": 121,
+   "with_any": 72,
+   "top": [
+    [
+     "OpenAI SDK",
+     50
+    ],
+    [
+     "MCP SDK",
+     30
+    ],
+    [
+     "Anthropic SDK",
+     24
+    ],
+    [
+     "LiteLLM",
+     18
+    ]
+   ]
+  },
+  "W&B Weave": {
+   "users": 54,
+   "with_any": 29,
+   "top": [
+    [
+     "OpenAI SDK",
+     23
+    ],
+    [
+     "LiteLLM",
+     13
+    ],
+    [
+     "Anthropic SDK",
+     7
+    ],
+    [
+     "MCP SDK",
+     6
+    ]
+   ]
+  },
+  "Comet Opik": {
+   "users": 50,
+   "with_any": 36,
+   "top": [
+    [
+     "OpenAI SDK",
+     32
+    ],
+    [
+     "MCP SDK",
+     22
+    ],
+    [
+     "Anthropic SDK",
+     18
+    ],
+    [
+     "LiteLLM",
+     10
+    ]
+   ]
+  }
+ },
+ "langchain_langgraph": {
+  "langchain": 6779,
+  "langgraph": 2417,
+  "both": 1814,
+  "langgraph_without_langchain": 603
+ },
+ "pairs": {
+  "LangChain+LlamaIndex": 820,
+  "LangChain+CrewAI": 846,
+  "LangChain+Pydantic AI": 290,
+  "LangGraph+CrewAI": 276,
+  "LangGraph+Pydantic AI": 148,
+  "LangGraph+OpenAI Agents SDK": 178,
+  "LangGraph+Google ADK": 143,
+  "CrewAI+AutoGen (Microsoft)": 164,
+  "LangChain+Deep Agents": 226,
+  "LangGraph+Deep Agents": 188,
+  "Claude Agent SDK+OpenAI Agents SDK": 147
+ },
+ "totals_mcp_named": 11921,
+ "autogen_either": 449,
+ "frameworks_per_project": {
+  "1": 8760,
+  "2": 2532,
+  "3": 734,
+  "4": 269,
+  "5": 147,
+  "6": 61,
+  "7": 48,
+  "8": 27,
+  "9": 19,
+  "10": 10,
+  "11": 7,
+  "12": 8,
+  "13": 4,
+  "14": 2,
+  "15": 2,
+  "17": 1,
+  "18": 1,
+  "20": 1
+ }
+}

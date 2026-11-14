@@ -6,6 +6,8 @@ The code behind the posts on the [py-code.org blog](https://py-code.org/blog/). 
 |---|---|
 | [`new-pypi-packages-imports/`](new-pypi-packages-imports/) | [What new PyPI packages are made of](https://py-code.org/blog/new-pypi-packages-imports/) |
 | [`removed-stdlib-modules-pypi/`](removed-stdlib-modules-pypi/) | [PyPI code that breaks on Python 3.12 and 3.13](https://py-code.org/blog/removed-stdlib-modules-pypi/) |
+| [`llm-observability-sdks-pypi/`](llm-observability-sdks-pypi/) | [The LLM observability SDKs that PyPI projects actually import](https://py-code.org/blog/llm-observability-sdks-pypi/) |
+| [`ai-agent-frameworks-pypi/`](ai-agent-frameworks-pypi/) | [The AI agent frameworks that PyPI projects actually import](https://py-code.org/blog/ai-agent-frameworks-pypi/) |
 
 ## The data
 
