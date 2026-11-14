@@ -43,7 +43,7 @@ OBSERVABILITY = {
     "Langfuse": ("langfuse", ["langfuse"], [], ["langfuse"]),
     "LangSmith": ("langsmith", ["langsmith"], [], ["langsmith"]),
     "Pydantic Logfire": ("logfire", ["logfire"], [], ["logfire"]),
-    "Arize Phoenix / OpenInference": ("arize-phoenix", ["openinference", "arize"],
+    "Arize Phoenix / OpenInference": ("openinference-semantic-conventions", ["openinference", "arize"],
         ["phoenix.otel", "phoenix.client", "phoenix.evals", "phoenix.trace", "phoenix.experiments",
          "phoenix.launch_app", "phoenix.session"], ["arize", "openinference"]),
     "MLflow Tracing": ("mlflow", [],
@@ -200,6 +200,14 @@ def analyse(con, agents_names):
            "projects_by_month": dict(months),
            "tools": {g: sorted((tool_row(t) for t in specs), key=lambda x: (-x["third_party"], x["tool"]))
                      for g, specs in GROUPS.items()}}
+
+    # OpenInference (Arize's instrumentation libraries) and Phoenix (Arize's app) share one
+    # row; say how many of its projects import each.
+    arize_spec = tools["Arize Phoenix / OpenInference"][1]
+    arize = {p for p in by_tool.get("Arize Phoenix / OpenInference", set()) if not is_family(p, arize_spec)}
+    oi = {row[0] for row in con.execute(
+        "SELECT DISTINCT project FROM r WHERE module = 'openinference'").fetchall()} & arize
+    out["arize_split"] = {"openinference": len(oi), "without_openinference": len(arize - oi)}
 
     mcp_named = {row[0] for row in con.execute(f"""
         SELECT project FROM p WHERE project IN (SELECT project FROM u WHERE tool = 'MCP SDK')

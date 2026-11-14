@@ -72,13 +72,13 @@
    {
     "tool": "Arize Phoenix / OpenInference",
     "group": "observability",
-    "package": "arize-phoenix",
+    "package": "openinference-semantic-conventions",
     "projects": 275,
     "third_party": 266,
     "own_family": 9,
     "top60k": 73,
-    "package_downloads_30d": 543340,
-    "package_downloads_month": 625192,
+    "package_downloads_30d": 973686,
+    "package_downloads_month": 11987201,
     "by_month": {
      "2025-11": 6,
      "2025-12": 4,
@@ -1376,6 +1376,10 @@
     }
    }
   ]
+ },
+ "arize_split": {
+  "openinference": 220,
+  "without_openinference": 46
  },
  "name_counts": {
   "langfuse.langchain": 117,
