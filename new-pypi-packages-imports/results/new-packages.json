@@ -1,0 +1,333 @@
+{
+  "snapshot": "2026-11-13",
+  "projects_recent": 335167,
+  "projects_all": 354763,
+  "llm_any": 23790,
+  "definitions": {
+    "download_share": "Sum of downloads_30d over the projects using the library, divided by the sum of downloads_30d over the projects using any library in the same comparison group. A project using several libraries counts in each. For http the group is requests, httpx and aiohttp; for pydantic it is every project using pydantic.",
+    "project_share": "Projects using the library divided by projects in the group.",
+    "http_group": "Denominator for the http shares: projects using any of requests, httpx or aiohttp (http_group.projects) and their summed downloads_30d (http_group.downloads).",
+    "pydantic_group": "Denominator for the pydantic shares: projects using pydantic (pydantic.users) and their summed downloads_30d (pydantic.downloads).",
+    "projects_all": "Every indexed project; the http and pydantic numbers use all of them.",
+    "llm_any": "Recent projects using any LLM SDK (MCP not counted), each counted once.",
+    "mcp_names": "Recent projects whose code uses each of these MCP SDK names.",
+    "mcp_client": "Recent projects using the MCP client API (mcp.client or mcp.ClientSession), each counted once.",
+    "recent": "Latest release uploaded on or after 2025-11-13.",
+    "llm_sdks": "Projects using any of: openai, anthropic, litellm, langchain, google-genai, ollama, counted once.",
+    "langchain": "Any module starting with 'langchain'.",
+    "google-genai": "Refs named google.genai or google.genai.* (module is 'google').",
+    "pydantic_v1": "v1-only: uses pydantic.validator or pydantic.root_validator and no v2 validator.",
+    "pydantic_v2": "v2-only: uses pydantic.field_validator or pydantic.model_validator and no v1 validator.",
+    "pydantic_both": "Uses both a v1 and a v2 validator.",
+    "pydantic_v1_namespace": "Uses pydantic.v1 (compatibility namespace). Counted separately; it is not v1 or v2 use.",
+    "pydantic_top_v1": "Top 10 v1-only projects by downloads_30d; check them, since compat shims inflate v1."
+  },
+  "months": [
+    [
+      "2025-11",
+      7469,
+      0.056232427366447985,
+      0.061052349712143524
+    ],
+    [
+      "2025-12",
+      12751,
+      0.08242490785036467,
+      0.048466786918673045
+    ],
+    [
+      "2026-01",
+      14373,
+      0.06282613233145481,
+      0.06456550476588047
+    ],
+    [
+      "2026-02",
+      17320,
+      0.08106235565819861,
+      0.101270207852194
+    ],
+    [
+      "2026-03",
+      22557,
+      0.08658066232211731,
+      0.06760650795761848
+    ],
+    [
+      "2026-04",
+      23085,
+      0.08780593458956032,
+      0.06125189517002382
+    ],
+    [
+      "2026-05",
+      22545,
+      0.08551785318252385,
+      0.06258593923264583
+    ],
+    [
+      "2026-06",
+      23467,
+      0.07810968594196105,
+      0.07060979247453872
+    ],
+    [
+      "2026-07",
+      26119,
+      0.07427543167808874,
+      0.06558444044565259
+    ],
+    [
+      "2026-08",
+      27684,
+      0.0655252131194914,
+      0.06585031064875017
+    ],
+    [
+      "2026-09",
+      33260,
+      0.05959110042092604,
+      0.06371016235718581
+    ],
+    [
+      "2026-10",
+      56685,
+      0.05964540883831702,
+      0.06493781423657052
+    ],
+    [
+      "2026-11",
+      47852,
+      0.06591156064532308,
+      0.08114603360361114
+    ]
+  ],
+  "month_counts": [
+    [
+      "2025-11",
+      420,
+      456
+    ],
+    [
+      "2025-12",
+      1051,
+      618
+    ],
+    [
+      "2026-01",
+      903,
+      928
+    ],
+    [
+      "2026-02",
+      1404,
+      1754
+    ],
+    [
+      "2026-03",
+      1953,
+      1525
+    ],
+    [
+      "2026-04",
+      2027,
+      1414
+    ],
+    [
+      "2026-05",
+      1928,
+      1411
+    ],
+    [
+      "2026-06",
+      1833,
+      1657
+    ],
+    [
+      "2026-07",
+      1940,
+      1713
+    ],
+    [
+      "2026-08",
+      1814,
+      1823
+    ],
+    [
+      "2026-09",
+      1982,
+      2119
+    ],
+    [
+      "2026-10",
+      3381,
+      3681
+    ],
+    [
+      "2026-11",
+      3154,
+      3883
+    ]
+  ],
+  "sdks": [
+    [
+      "openai",
+      12261
+    ],
+    [
+      "anthropic",
+      7758
+    ],
+    [
+      "litellm",
+      3018
+    ],
+    [
+      "langchain",
+      7753
+    ],
+    [
+      "google-genai",
+      3440
+    ],
+    [
+      "ollama",
+      1281
+    ],
+    [
+      "mcp",
+      22982
+    ]
+  ],
+  "mcp_names": [
+    [
+      "mcp.server",
+      20071
+    ],
+    [
+      "mcp.server.fastmcp.FastMCP",
+      11709
+    ],
+    [
+      "mcp.ClientSession",
+      2258
+    ]
+  ],
+  "mcp_client": 3005,
+  "sdks_share": [
+    [
+      "openai",
+      0.03658176371778844
+    ],
+    [
+      "anthropic",
+      0.023146670167409084
+    ],
+    [
+      "litellm",
+      0.009004466430167647
+    ],
+    [
+      "langchain",
+      0.023131752230977392
+    ],
+    [
+      "google-genai",
+      0.010263540265002223
+    ],
+    [
+      "ollama",
+      0.003821975313798793
+    ],
+    [
+      "mcp",
+      0.0685688030146166
+    ]
+  ],
+  "http": [
+    [
+      "requests",
+      46249,
+      0.7246971490557087
+    ],
+    [
+      "httpx",
+      41723,
+      0.2670982879825676
+    ],
+    [
+      "aiohttp",
+      9734,
+      0.47452133647308364
+    ]
+  ],
+  "http_project_share": {
+    "requests": 0.5168756565859765,
+    "httpx": 0.4662933905541027,
+    "aiohttp": 0.10878651735622163
+  },
+  "http_group": {
+    "projects": 89478,
+    "downloads": 7787310951
+  },
+  "pydantic": {
+    "v1": [
+      483,
+      0.13383856736950347
+    ],
+    "v2": [
+      23904,
+      0.3997814162881437
+    ],
+    "both": 628,
+    "v1_namespace": 567,
+    "users": 59336,
+    "downloads": 3221552027,
+    "project_share": {
+      "v1": 0.008140083591748686,
+      "v2": 0.4028582985034381
+    },
+    "top_v1": [
+      [
+        "huggingface-hub",
+        212386167
+      ],
+      [
+        "openai",
+        202488268
+      ],
+      [
+        "dbt-semantic-interfaces",
+        7378468
+      ],
+      [
+        "metricflow",
+        2848535
+      ],
+      [
+        "dbt-databricks",
+        2335291
+      ],
+      [
+        "elementary-data",
+        781616
+      ],
+      [
+        "evidently",
+        650604
+      ],
+      [
+        "gluonts",
+        304039
+      ],
+      [
+        "FLAML",
+        286460
+      ],
+      [
+        "llama-index-legacy",
+        253566
+      ]
+    ]
+  }
+}
