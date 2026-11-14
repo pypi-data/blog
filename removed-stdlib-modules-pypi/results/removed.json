@@ -1,0 +1,1231 @@
+{
+  "snapshot": "2026-11-13",
+  "projects_all": 354763,
+  "importers": 3763,
+  "importers_top60k": 2202,
+  "levels": {
+    "module": 1370,
+    "function": 253,
+    "safe": 592,
+    "other": 1548
+  },
+  "check_errors": 3,
+  "unguarded": 1623,
+  "unguarded_top60k": 852,
+  "unguarded_top60k_downloads": 342074795,
+  "unguarded_only_distutils": 890,
+  "covered_by_dependency": 309,
+  "stale_top60k": 544,
+  "stale_top60k_downloads": 126098664,
+  "modules": [
+    {
+      "module": "distutils",
+      "removed_in": "3.12",
+      "replacement": "setuptools (still ships distutils), or sysconfig, shutil.which, packaging",
+      "index": 2565,
+      "top_level": 828,
+      "function": 145,
+      "safe": 131,
+      "other": 1260
+    },
+    {
+      "module": "imp",
+      "removed_in": "3.12",
+      "replacement": "importlib; zombie-imp on PyPI",
+      "index": 614,
+      "top_level": 185,
+      "function": 61,
+      "safe": 306,
+      "other": 61
+    },
+    {
+      "module": "cgi",
+      "removed_in": "3.13",
+      "replacement": "urllib.parse, email.message; legacy-cgi on PyPI",
+      "index": 455,
+      "top_level": 210,
+      "function": 38,
+      "safe": 164,
+      "other": 20
+    },
+    {
+      "module": "audioop",
+      "removed_in": "3.13",
+      "replacement": "audioop-lts on PyPI",
+      "index": 151,
+      "top_level": 44,
+      "function": 8,
+      "safe": 33,
+      "other": 1
+    },
+    {
+      "module": "imghdr",
+      "removed_in": "3.13",
+      "replacement": "filetype, puremagic; standard-imghdr on PyPI",
+      "index": 114,
+      "top_level": 71,
+      "function": 14,
+      "safe": 20,
+      "other": 2
+    },
+    {
+      "module": "pipes",
+      "removed_in": "3.13",
+      "replacement": "subprocess, shlex.quote",
+      "index": 107,
+      "top_level": 32,
+      "function": 5,
+      "safe": 66,
+      "other": 4
+    },
+    {
+      "module": "telnetlib",
+      "removed_in": "3.13",
+      "replacement": "telnetlib3, Exscript; standard-telnetlib on PyPI",
+      "index": 85,
+      "top_level": 52,
+      "function": 8,
+      "safe": 13,
+      "other": 4
+    },
+    {
+      "module": "crypt",
+      "removed_in": "3.13",
+      "replacement": "hashlib, bcrypt, argon2-cffi; crypt_r on PyPI",
+      "index": 67,
+      "top_level": 14,
+      "function": 4,
+      "safe": 44,
+      "other": 3
+    },
+    {
+      "module": "asyncore",
+      "removed_in": "3.12",
+      "replacement": "asyncio; pyasyncore on PyPI",
+      "index": 46,
+      "top_level": 27,
+      "function": 1,
+      "safe": 6,
+      "other": 6
+    },
+    {
+      "module": "lib2to3",
+      "removed_in": "3.13",
+      "replacement": "none in the standard library",
+      "index": 35,
+      "top_level": 18,
+      "function": 9,
+      "safe": 5,
+      "other": 3
+    },
+    {
+      "module": "cgitb",
+      "removed_in": "3.13",
+      "replacement": "legacy-cgi on PyPI",
+      "index": 25,
+      "top_level": 14,
+      "function": 6,
+      "safe": 3,
+      "other": 1
+    },
+    {
+      "module": "xdrlib",
+      "removed_in": "3.13",
+      "replacement": "standard-xdrlib on PyPI",
+      "index": 21,
+      "top_level": 14,
+      "function": 0,
+      "safe": 6,
+      "other": 1
+    },
+    {
+      "module": "aifc",
+      "removed_in": "3.13",
+      "replacement": "standard-aifc on PyPI",
+      "index": 15,
+      "top_level": 7,
+      "function": 4,
+      "safe": 0,
+      "other": 0
+    },
+    {
+      "module": "chunk",
+      "removed_in": "3.13",
+      "replacement": "standard-chunk on PyPI",
+      "index": 15,
+      "top_level": 11,
+      "function": 0,
+      "safe": 2,
+      "other": 1
+    },
+    {
+      "module": "uu",
+      "removed_in": "3.13",
+      "replacement": "base64",
+      "index": 14,
+      "top_level": 10,
+      "function": 2,
+      "safe": 2,
+      "other": 0
+    },
+    {
+      "module": "smtpd",
+      "removed_in": "3.12",
+      "replacement": "aiosmtpd on PyPI",
+      "index": 10,
+      "top_level": 7,
+      "function": 0,
+      "safe": 0,
+      "other": 3
+    },
+    {
+      "module": "sndhdr",
+      "removed_in": "3.13",
+      "replacement": "filetype, puremagic; standard-sndhdr on PyPI",
+      "index": 10,
+      "top_level": 9,
+      "function": 0,
+      "safe": 0,
+      "other": 0
+    },
+    {
+      "module": "msilib",
+      "removed_in": "3.13",
+      "replacement": "none",
+      "index": 10,
+      "top_level": 8,
+      "function": 0,
+      "safe": 1,
+      "other": 1
+    },
+    {
+      "module": "asynchat",
+      "removed_in": "3.12",
+      "replacement": "asyncio; pyasynchat on PyPI",
+      "index": 9,
+      "top_level": 4,
+      "function": 0,
+      "safe": 1,
+      "other": 1
+    },
+    {
+      "module": "nntplib",
+      "removed_in": "3.13",
+      "replacement": "pynntp; standard-nntplib on PyPI",
+      "index": 9,
+      "top_level": 4,
+      "function": 0,
+      "safe": 1,
+      "other": 2
+    },
+    {
+      "module": "spwd",
+      "removed_in": "3.13",
+      "replacement": "python-pam",
+      "index": 7,
+      "top_level": 0,
+      "function": 0,
+      "safe": 7,
+      "other": 0
+    },
+    {
+      "module": "mailcap",
+      "removed_in": "3.13",
+      "replacement": "mimetypes",
+      "index": 6,
+      "top_level": 1,
+      "function": 0,
+      "safe": 3,
+      "other": 0
+    },
+    {
+      "module": "ossaudiodev",
+      "removed_in": "3.13",
+      "replacement": "pygame",
+      "index": 3,
+      "top_level": 0,
+      "function": 0,
+      "safe": 3,
+      "other": 0
+    },
+    {
+      "module": "sunau",
+      "removed_in": "3.13",
+      "replacement": "standard-sunau on PyPI",
+      "index": 2,
+      "top_level": 1,
+      "function": 0,
+      "safe": 0,
+      "other": 0
+    },
+    {
+      "module": "nis",
+      "removed_in": "3.13",
+      "replacement": "none",
+      "index": 0,
+      "top_level": 0,
+      "function": 0,
+      "safe": 0,
+      "other": 0
+    }
+  ],
+  "examples": {
+    "nose": {
+      "downloads_30d": 1794701,
+      "last_release": "2015-06-02",
+      "level": "module"
+    },
+    "boto": {
+      "downloads_30d": 3416173,
+      "last_release": "2018-07-11",
+      "level": "module"
+    },
+    "pydub": {
+      "downloads_30d": 7478920,
+      "last_release": "2021-03-10",
+      "level": "safe"
+    },
+    "coreapi": {
+      "downloads_30d": 526530,
+      "last_release": "2017-10-05",
+      "level": "module"
+    },
+    "htmlmin": {
+      "downloads_30d": 662671,
+      "last_release": "2017-12-29",
+      "level": "module"
+    },
+    "PGPy": {
+      "downloads_30d": 785394,
+      "last_release": "2022-11-24",
+      "level": "module"
+    },
+    "coloredlogs": {
+      "downloads_30d": 21574132,
+      "last_release": "2021-06-11",
+      "level": "module"
+    },
+    "humanfriendly": {
+      "downloads_30d": 26687461,
+      "last_release": "2021-09-17",
+      "level": "module"
+    },
+    "docker-pycreds": {
+      "downloads_30d": 5170286,
+      "last_release": "2018-11-29",
+      "level": "module"
+    },
+    "aioredis": {
+      "downloads_30d": 1297206,
+      "last_release": "2021-12-27",
+      "level": "module"
+    },
+    "arsenic": {
+      "downloads_30d": 1238696,
+      "last_release": "2021-08-23",
+      "level": "module"
+    },
+    "python-editor": {
+      "downloads_30d": 713285,
+      "last_release": "2019-02-01",
+      "level": "module"
+    },
+    "GPUtil": {
+      "downloads_30d": 908868,
+      "last_release": "2018-12-18",
+      "level": "module"
+    },
+    "pip": {
+      "downloads_30d": 59289078,
+      "last_release": "2026-11-02",
+      "level": "module"
+    }
+  },
+  "top": [
+    {
+      "project": "pip",
+      "downloads_30d": 59289078,
+      "last_release": "2026-11-02",
+      "requires_python": ">=3.10",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "pip/_internal/locations/_distutils.py:22",
+        "pip/_internal/locations/_distutils.py:23",
+        "pip/_internal/locations/_distutils.py:24"
+      ],
+      "stale": false
+    },
+    {
+      "project": "debugpy",
+      "downloads_30d": 52849884,
+      "last_release": "2026-09-15",
+      "requires_python": ">=3.10",
+      "level": "function",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "debugpy/_vendored/pydevd/setup_pydevd_cython.py:214",
+        "debugpy/_vendored/pydevd/pydev_ipython/inputhook.py:150"
+      ],
+      "stale": false
+    },
+    {
+      "project": "Cython",
+      "downloads_30d": 52025706,
+      "last_release": "2026-11-01",
+      "requires_python": ">=3.9",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "Cython/Build/Inline.py:9",
+        "Cython/Build/Inline.py:10",
+        "Cython/Build/IpythonMagic.py:52"
+      ],
+      "stale": false
+    },
+    {
+      "project": "future",
+      "downloads_30d": 36202649,
+      "last_release": "2024-02-21",
+      "requires_python": ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*",
+      "level": "module",
+      "modules": [
+        "imghdr",
+        "lib2to3",
+        "sndhdr",
+        "uu"
+      ],
+      "where": [
+        "future/backports/email/message.py:13",
+        "future/backports/email/mime/audio.py:12",
+        "future/backports/email/mime/image.py:12"
+      ],
+      "stale": true
+    },
+    {
+      "project": "humanfriendly",
+      "downloads_30d": 26687461,
+      "last_release": "2021-09-17",
+      "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+      "level": "module",
+      "modules": [
+        "pipes"
+      ],
+      "where": [
+        "humanfriendly/cli.py:82",
+        "humanfriendly/testing.py:28"
+      ],
+      "stale": true
+    },
+    {
+      "project": "coloredlogs",
+      "downloads_30d": 21574132,
+      "last_release": "2021-06-11",
+      "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+      "level": "module",
+      "modules": [
+        "pipes"
+      ],
+      "where": [
+        "coloredlogs/converter/__init__.py:12"
+      ],
+      "stale": true
+    },
+    {
+      "project": "ansible-core",
+      "downloads_30d": 13052321,
+      "last_release": "2026-11-02",
+      "requires_python": ">=3.13",
+      "level": "function",
+      "modules": [
+        "imp"
+      ],
+      "where": [
+        "ansible/modules/pip.py:519"
+      ],
+      "stale": false
+    },
+    {
+      "project": "pybind11",
+      "downloads_30d": 9273002,
+      "last_release": "2026-08-06",
+      "requires_python": ">=3.9",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "pybind11/setup_helpers.py:71",
+        "pybind11/setup_helpers.py:72"
+      ],
+      "stale": false
+    },
+    {
+      "project": "audioread",
+      "downloads_30d": 6790895,
+      "last_release": "2025-10-26",
+      "requires_python": ">=3.9",
+      "level": "module",
+      "modules": [
+        "audioop"
+      ],
+      "where": [
+        "audioread/rawread.py:17"
+      ],
+      "stale": false
+    },
+    {
+      "project": "docker-pycreds",
+      "downloads_30d": 5170286,
+      "last_release": "2018-11-29",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "dockerpycreds/utils.py:1"
+      ],
+      "stale": true
+    },
+    {
+      "project": "pytzdata",
+      "downloads_30d": 4050481,
+      "last_release": "2020-07-13",
+      "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "pytzdata/commands/make.py:11"
+      ],
+      "stale": true
+    },
+    {
+      "project": "meson",
+      "downloads_30d": 3989494,
+      "last_release": "2026-09-22",
+      "requires_python": ">=3.10",
+      "level": "function",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "mesonbuild/scripts/python_info.py:18"
+      ],
+      "stale": false
+    },
+    {
+      "project": "boto",
+      "downloads_30d": 3416173,
+      "last_release": "2018-07-11",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "cgi",
+        "imp"
+      ],
+      "where": [
+        "boto/plugin.py:40",
+        "boto/ecs/item.py:24",
+        "boto/pyami/launch_ami.py:25"
+      ],
+      "stale": true
+    },
+    {
+      "project": "oauth2client",
+      "downloads_30d": 2545835,
+      "last_release": "2018-09-07",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "cgi"
+      ],
+      "where": [
+        "oauth2client/contrib/appengine.py:20"
+      ],
+      "stale": true
+    },
+    {
+      "project": "Pympler",
+      "downloads_30d": 2526459,
+      "last_release": "2024-06-28",
+      "requires_python": ">=3.6",
+      "level": "module",
+      "modules": [
+        "cgi"
+      ],
+      "where": [
+        "pympler/util/bottle.py:38"
+      ],
+      "stale": true
+    },
+    {
+      "project": "gsutil",
+      "downloads_30d": 2053198,
+      "last_release": "2026-10-21",
+      "requires_python": "<3.15,>=3.9",
+      "level": "module",
+      "modules": [
+        "cgi"
+      ],
+      "where": [
+        "gslib/vendored/boto/boto/ecs/item.py:24",
+        "gslib/vendored/oauth2client/oauth2client/contrib/appengine.py:20"
+      ],
+      "stale": false
+    },
+    {
+      "project": "nose",
+      "downloads_30d": 1794701,
+      "last_release": "2015-06-02",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "imp"
+      ],
+      "where": [
+        "nose/importer.py:12"
+      ],
+      "stale": true
+    },
+    {
+      "project": "memory-profiler",
+      "downloads_30d": 1633210,
+      "last_release": "2022-11-15",
+      "requires_python": ">=3.5",
+      "level": "function",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "memory_profiler.py:941",
+        "memory_profiler.py:1134"
+      ],
+      "stale": true
+    },
+    {
+      "project": "robotframework",
+      "downloads_30d": 1585682,
+      "last_release": "2026-11-02",
+      "requires_python": ">=3.8",
+      "level": "module",
+      "modules": [
+        "telnetlib"
+      ],
+      "where": [
+        "robot/libraries/Telnet.py:20"
+      ],
+      "stale": false
+    },
+    {
+      "project": "gnupg",
+      "downloads_30d": 1386341,
+      "last_release": "2017-09-06",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "versioneer.py:84",
+        "versioneer.py:85",
+        "versioneer.py:86"
+      ],
+      "stale": true
+    },
+    {
+      "project": "Incremental",
+      "downloads_30d": 1353533,
+      "last_release": "2025-11-28",
+      "requires_python": ">=3.8",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "incremental/__init__.py:17"
+      ],
+      "stale": false
+    },
+    {
+      "project": "aioredis",
+      "downloads_30d": 1297206,
+      "last_release": "2021-12-27",
+      "requires_python": ">=3.6",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "aioredis/connection.py:11"
+      ],
+      "stale": true
+    },
+    {
+      "project": "arsenic",
+      "downloads_30d": 1238696,
+      "last_release": "2021-08-23",
+      "requires_python": ">=3.7,<4.0",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "arsenic/services.py:5"
+      ],
+      "stale": true
+    },
+    {
+      "project": "docker-py",
+      "downloads_30d": 1083818,
+      "last_release": "2016-11-02",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "docker/ssladapter/ssladapter.py:7",
+        "docker/utils/utils.py:10"
+      ],
+      "stale": true
+    },
+    {
+      "project": "GPUtil",
+      "downloads_30d": 908868,
+      "last_release": "2018-12-18",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "GPUtil/GPUtil.py:34"
+      ],
+      "stale": true
+    },
+    {
+      "project": "PGPy",
+      "downloads_30d": 785394,
+      "last_release": "2022-11-24",
+      "requires_python": ">=3.6",
+      "level": "module",
+      "modules": [
+        "imghdr"
+      ],
+      "where": [
+        "pgpy/constants.py:5"
+      ],
+      "stale": true
+    },
+    {
+      "project": "deepspeed",
+      "downloads_30d": 771021,
+      "last_release": "2026-10-29",
+      "requires_python": "",
+      "level": "function",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "deepspeed/ops/op_builder/builder.py:344",
+        "deepspeed/ops/op_builder/builder.py:345",
+        "deepspeed/ops/op_builder/builder.py:346"
+      ],
+      "stale": false
+    },
+    {
+      "project": "python-editor",
+      "downloads_30d": 713285,
+      "last_release": "2019-02-01",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "editor.py:11"
+      ],
+      "stale": true
+    },
+    {
+      "project": "pydevd",
+      "downloads_30d": 704041,
+      "last_release": "2026-04-02",
+      "requires_python": "",
+      "level": "function",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "setup_pydevd_cython.py:184",
+        "pydev_ipython/inputhook.py:150"
+      ],
+      "stale": false
+    },
+    {
+      "project": "htmlmin",
+      "downloads_30d": 662671,
+      "last_release": "2017-12-29",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "cgi"
+      ],
+      "where": [
+        "htmlmin/main.py:28"
+      ],
+      "stale": true
+    },
+    {
+      "project": "azureml-core",
+      "downloads_30d": 565231,
+      "last_release": "2026-06-16",
+      "requires_python": "<4.0,>=3.8",
+      "level": "module",
+      "modules": [
+        "distutils",
+        "imghdr"
+      ],
+      "where": [
+        "azureml/_vendor/azure_cli_core/extension/__init__.py:12",
+        "azureml/core/_metrics.py:5"
+      ],
+      "stale": false
+    },
+    {
+      "project": "coreapi",
+      "downloads_30d": 526530,
+      "last_release": "2017-10-05",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "cgi"
+      ],
+      "where": [
+        "coreapi/codecs/download.py:5"
+      ],
+      "stale": true
+    },
+    {
+      "project": "pyinotify",
+      "downloads_30d": 504702,
+      "last_release": "2015-06-04",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "asyncore"
+      ],
+      "where": [
+        "python3/pyinotify.py:71"
+      ],
+      "stale": true
+    },
+    {
+      "project": "google-cloud-pipeline-components",
+      "downloads_30d": 478209,
+      "last_release": "2026-11-11",
+      "requires_python": ">=3.8.0",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "google_cloud_pipeline_components/container/v1/aiplatform/remote_runner.py:18"
+      ],
+      "stale": false
+    },
+    {
+      "project": "pex",
+      "downloads_30d": 445784,
+      "last_release": "2026-11-06",
+      "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<3.17,>=2.7",
+      "level": "module",
+      "modules": [
+        "cgi",
+        "distutils",
+        "imp",
+        "lib2to3"
+      ],
+      "where": [
+        "pex/distutils/commands/bdist_pex.py:10",
+        "pex/distutils/commands/bdist_pex.py:11",
+        "pex/vendor/_vendored/packaging_20_9/packaging/tags.py:7"
+      ],
+      "stale": false
+    },
+    {
+      "project": "pymavlink",
+      "downloads_30d": 418512,
+      "last_release": "2026-09-24",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "imp"
+      ],
+      "where": [
+        "pymavlink/tools/mavgpslag.py:40"
+      ],
+      "stale": false
+    },
+    {
+      "project": "psycopg-c",
+      "downloads_30d": 412326,
+      "last_release": "2026-11-12",
+      "requires_python": ">=3.10",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "build_backend/psycopg_build_ext.py:14"
+      ],
+      "stale": false
+    },
+    {
+      "project": "pytest-freezegun",
+      "downloads_30d": 395583,
+      "last_release": "2020-07-19",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "pytest_freezegun.py:5"
+      ],
+      "stale": true
+    },
+    {
+      "project": "pyrepl",
+      "downloads_30d": 392793,
+      "last_release": "2026-08-02",
+      "requires_python": ">=3.8",
+      "level": "function",
+      "modules": [
+        "imp"
+      ],
+      "where": [
+        "pyrepl/module_lister.py:46"
+      ],
+      "stale": false
+    },
+    {
+      "project": "ytsaurus-client",
+      "downloads_30d": 385000,
+      "last_release": "2026-10-02",
+      "requires_python": ">=3.8",
+      "level": "module",
+      "modules": [
+        "xdrlib"
+      ],
+      "where": [
+        "yt/packages/dill/_objects.py:53"
+      ],
+      "stale": false
+    }
+  ],
+  "top_stale": [
+    {
+      "project": "future",
+      "downloads_30d": 36202649,
+      "last_release": "2024-02-21",
+      "requires_python": ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*",
+      "level": "module",
+      "modules": [
+        "imghdr",
+        "lib2to3",
+        "sndhdr",
+        "uu"
+      ],
+      "where": [
+        "future/backports/email/message.py:13",
+        "future/backports/email/mime/audio.py:12",
+        "future/backports/email/mime/image.py:12"
+      ],
+      "stale": true
+    },
+    {
+      "project": "humanfriendly",
+      "downloads_30d": 26687461,
+      "last_release": "2021-09-17",
+      "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+      "level": "module",
+      "modules": [
+        "pipes"
+      ],
+      "where": [
+        "humanfriendly/cli.py:82",
+        "humanfriendly/testing.py:28"
+      ],
+      "stale": true
+    },
+    {
+      "project": "coloredlogs",
+      "downloads_30d": 21574132,
+      "last_release": "2021-06-11",
+      "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+      "level": "module",
+      "modules": [
+        "pipes"
+      ],
+      "where": [
+        "coloredlogs/converter/__init__.py:12"
+      ],
+      "stale": true
+    },
+    {
+      "project": "docker-pycreds",
+      "downloads_30d": 5170286,
+      "last_release": "2018-11-29",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "dockerpycreds/utils.py:1"
+      ],
+      "stale": true
+    },
+    {
+      "project": "pytzdata",
+      "downloads_30d": 4050481,
+      "last_release": "2020-07-13",
+      "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "pytzdata/commands/make.py:11"
+      ],
+      "stale": true
+    },
+    {
+      "project": "boto",
+      "downloads_30d": 3416173,
+      "last_release": "2018-07-11",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "cgi",
+        "imp"
+      ],
+      "where": [
+        "boto/plugin.py:40",
+        "boto/ecs/item.py:24",
+        "boto/pyami/launch_ami.py:25"
+      ],
+      "stale": true
+    },
+    {
+      "project": "oauth2client",
+      "downloads_30d": 2545835,
+      "last_release": "2018-09-07",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "cgi"
+      ],
+      "where": [
+        "oauth2client/contrib/appengine.py:20"
+      ],
+      "stale": true
+    },
+    {
+      "project": "Pympler",
+      "downloads_30d": 2526459,
+      "last_release": "2024-06-28",
+      "requires_python": ">=3.6",
+      "level": "module",
+      "modules": [
+        "cgi"
+      ],
+      "where": [
+        "pympler/util/bottle.py:38"
+      ],
+      "stale": true
+    },
+    {
+      "project": "nose",
+      "downloads_30d": 1794701,
+      "last_release": "2015-06-02",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "imp"
+      ],
+      "where": [
+        "nose/importer.py:12"
+      ],
+      "stale": true
+    },
+    {
+      "project": "memory-profiler",
+      "downloads_30d": 1633210,
+      "last_release": "2022-11-15",
+      "requires_python": ">=3.5",
+      "level": "function",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "memory_profiler.py:941",
+        "memory_profiler.py:1134"
+      ],
+      "stale": true
+    },
+    {
+      "project": "gnupg",
+      "downloads_30d": 1386341,
+      "last_release": "2017-09-06",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "versioneer.py:84",
+        "versioneer.py:85",
+        "versioneer.py:86"
+      ],
+      "stale": true
+    },
+    {
+      "project": "aioredis",
+      "downloads_30d": 1297206,
+      "last_release": "2021-12-27",
+      "requires_python": ">=3.6",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "aioredis/connection.py:11"
+      ],
+      "stale": true
+    },
+    {
+      "project": "arsenic",
+      "downloads_30d": 1238696,
+      "last_release": "2021-08-23",
+      "requires_python": ">=3.7,<4.0",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "arsenic/services.py:5"
+      ],
+      "stale": true
+    },
+    {
+      "project": "docker-py",
+      "downloads_30d": 1083818,
+      "last_release": "2016-11-02",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "docker/ssladapter/ssladapter.py:7",
+        "docker/utils/utils.py:10"
+      ],
+      "stale": true
+    },
+    {
+      "project": "GPUtil",
+      "downloads_30d": 908868,
+      "last_release": "2018-12-18",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "GPUtil/GPUtil.py:34"
+      ],
+      "stale": true
+    },
+    {
+      "project": "PGPy",
+      "downloads_30d": 785394,
+      "last_release": "2022-11-24",
+      "requires_python": ">=3.6",
+      "level": "module",
+      "modules": [
+        "imghdr"
+      ],
+      "where": [
+        "pgpy/constants.py:5"
+      ],
+      "stale": true
+    },
+    {
+      "project": "python-editor",
+      "downloads_30d": 713285,
+      "last_release": "2019-02-01",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "distutils"
+      ],
+      "where": [
+        "editor.py:11"
+      ],
+      "stale": true
+    },
+    {
+      "project": "htmlmin",
+      "downloads_30d": 662671,
+      "last_release": "2017-12-29",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "cgi"
+      ],
+      "where": [
+        "htmlmin/main.py:28"
+      ],
+      "stale": true
+    },
+    {
+      "project": "coreapi",
+      "downloads_30d": 526530,
+      "last_release": "2017-10-05",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "cgi"
+      ],
+      "where": [
+        "coreapi/codecs/download.py:5"
+      ],
+      "stale": true
+    },
+    {
+      "project": "pyinotify",
+      "downloads_30d": 504702,
+      "last_release": "2015-06-04",
+      "requires_python": "",
+      "level": "module",
+      "modules": [
+        "asyncore"
+      ],
+      "where": [
+        "python3/pyinotify.py:71"
+      ],
+      "stale": true
+    }
+  ]
+}

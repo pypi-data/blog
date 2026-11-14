@@ -1,0 +1,16 @@
+┌────────────────┬───────────────┬──────────────┬─────────────────────────────────────────────┐
+│    project     │ downloads_30d │ last_release │               removed_modules               │
+│    varchar     │     int64     │     date     │                   varchar                   │
+├────────────────┼───────────────┼──────────────┼─────────────────────────────────────────────┤
+│ future         │      36202649 │ 2024-02-21   │ distutils, imghdr, imp, lib2to3, sndhdr, uu │
+│ humanfriendly  │      26687461 │ 2021-09-17   │ distutils, pipes                            │
+│ coloredlogs    │      21574132 │ 2021-06-11   │ pipes                                       │
+│ ghp-import     │      13545359 │ 2022-05-02   │ pipes                                       │
+│ pydub          │       7478920 │ 2021-03-10   │ audioop                                     │
+│ avro-python3   │       5785228 │ 2021-03-17   │ distutils                                   │
+│ crcmod         │       5688202 │ 2010-06-27   │ distutils                                   │
+│ docker-pycreds │       5170286 │ 2018-11-29   │ distutils                                   │
+│ func-timeout   │       4256275 │ 2019-08-19   │ imp                                         │
+│ pycrypto       │       4211020 │ 2014-06-20   │ distutils                                   │
+└────────────────┴───────────────┴──────────────┴─────────────────────────────────────────────┘
+  10 rows                                                                           4 columns

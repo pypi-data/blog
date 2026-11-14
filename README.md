@@ -5,6 +5,7 @@ The code behind the posts on the [py-code.org blog](https://py-code.org/blog/). 
 | Folder | Post |
 |---|---|
 | [`new-pypi-packages-imports/`](new-pypi-packages-imports/) | [What new PyPI packages are made of](https://py-code.org/blog/new-pypi-packages-imports/) |
+| [`removed-stdlib-modules-pypi/`](removed-stdlib-modules-pypi/) | [PyPI code that breaks on Python 3.12 and 3.13](https://py-code.org/blog/removed-stdlib-modules-pypi/) |
 
 ## The data
 
