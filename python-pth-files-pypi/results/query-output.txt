@@ -1,0 +1,18 @@
+┌───────────────────────────┬──────────────────────────────────────────────────────────────────────────┬───────────────┐
+│          project          │                                   pth                                    │ downloads_30d │
+│          varchar          │                                 varchar                                  │     int64     │
+├───────────────────────────┼──────────────────────────────────────────────────────────────────────────┼───────────────┤
+│ setuptools                │ distutils-precedence.pth                                                 │     467506191 │
+│ coverage                  │ a1_coverage.pth                                                          │     181756312 │
+│ google-cloud-aiplatform   │ google_cloud_aiplatform-2.9.0-py3.12-nspkg.pth                           │      70848521 │
+│ coloredlogs               │ coloredlogs.pth                                                          │      21574132 │
+│ pywin32                   │ pywin32.pth                                                              │       8087734 │
+│ google-generativeai       │ google_generativeai-0.8.6-py3.13-nspkg.pth                               │       7074908 │
+│ acryl-datahub             │ tmp/build-env-0gc7l757/lib/python3.10/site-packages/datahub_force_pure_… │       6806934 │
+│ acryl-datahub             │ tmp/build-env-0gc7l757/lib/python3.10/site-packages/datahub_setproctitl… │       6806934 │
+│ functions-framework       │ functions_framework-3.10.2-py3.12-nspkg.pth                              │       4558411 │
+│ snowflake-snowpark-python │ snowflake_snowpark_python-1.56.0-py3.11-nspkg.pth                        │       2595278 │
+│ nvidia-cutlass-dsl        │ nvidia_cutlass_dsl_packages.pth                                          │       1623552 │
+│ ibm-db                    │ ibm_db_dll.pth                                                           │       1474574 │
+└───────────────────────────┴──────────────────────────────────────────────────────────────────────────┴───────────────┘
+  12 rows                                                                                                    3 columns

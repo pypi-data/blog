@@ -1,0 +1,830 @@
+{
+  "snapshot": "2026-11-13",
+  "projects_all": 354763,
+  "listed_projects": 736,
+  "listed_files": 748,
+  "check_errors": [],
+  "files_with_exec": 748,
+  "files_by_where": {
+    "every": 685,
+    "windows": 20,
+    "never": 43
+  },
+  "running": 684,
+  "running_top60k": 244,
+  "running_downloads": 775686634,
+  "own": 244,
+  "own_top60k": 72,
+  "own_downloads": 687729878,
+  "own_env": 39,
+  "own_released_2026": 217,
+  "own_start": 13,
+  "namespace_only": 440,
+  "namespace_only_top60k": 172,
+  "namespace_only_downloads": 87956756,
+  "namespace_top": [
+    {
+      "project": "google-cloud-aiplatform",
+      "downloads_30d": 70848521
+    },
+    {
+      "project": "google-generativeai",
+      "downloads_30d": 7074908
+    },
+    {
+      "project": "functions-framework",
+      "downloads_30d": 4558411
+    },
+    {
+      "project": "snowflake-snowpark-python",
+      "downloads_30d": 2595278
+    },
+    {
+      "project": "appengine-python-standard",
+      "downloads_30d": 339314
+    },
+    {
+      "project": "testing.common.database",
+      "downloads_30d": 207624
+    },
+    {
+      "project": "PasteDeploy",
+      "downloads_30d": 182014
+    },
+    {
+      "project": "testing.postgresql",
+      "downloads_30d": 175318
+    },
+    {
+      "project": "intuit-oauth",
+      "downloads_30d": 140464
+    },
+    {
+      "project": "ruamel.base",
+      "downloads_30d": 115496
+    }
+  ],
+  "namespace_files": 440,
+  "namespace_files_py2": 38,
+  "windows_only": 17,
+  "never": 35,
+  "never_projects": [
+    "HydPy",
+    "acryl-datahub",
+    "acryl-datahub-hcc-patched",
+    "apm-cli",
+    "better-exceptions-fork",
+    "cibuildwheel",
+    "coconut",
+    "coconut-develop",
+    "escpos",
+    "hyperon-das",
+    "isaacsim-robot-motion",
+    "isaacsim-utils",
+    "jira-assistant-skills",
+    "khimaira",
+    "kvcached",
+    "litert-lm",
+    "litert-lm-nightly",
+    "ming-probe-langchain",
+    "mingjing",
+    "namedthreads",
+    "numpy-router",
+    "pfix",
+    "provide-testkit",
+    "salt",
+    "smriprep-freesurfer732-data-06",
+    "smriprep-freesurfer732-data-07",
+    "subprocess.run",
+    "superstream-clients",
+    "superstream-clients-beta",
+    "swe-copilot-agents",
+    "tflite-micro",
+    "tokensave",
+    "toolrecall",
+    "underscores",
+    "xbuild"
+  ],
+  "windows_only_projects": [
+    "adauto",
+    "ai-warden-oss",
+    "ants-platform",
+    "buildit-argus",
+    "colorsvalk",
+    "contextpilot",
+    "datarec-lib",
+    "deepstrain",
+    "iris-embedded-python-wrapper",
+    "print-at-soc",
+    "pynotify-auto",
+    "python-certifi-win32",
+    "repofuse",
+    "supply-chain-guard",
+    "the-pyro-lang",
+    "video2flow",
+    "vldb-toolkits"
+  ],
+  "start_projects": [
+    "atpublic-install",
+    "autowrapt",
+    "basthon-turtle",
+    "django-service-urls",
+    "flake8-toml-config",
+    "karellen-llvm-clang",
+    "karellen-llvm-core",
+    "karellen-llvm-core-debug",
+    "karellen-llvm-lldb",
+    "karellen-llvm-toolchain-tools",
+    "karellen-rr",
+    "mkdocs-ng",
+    "mkdocs-ng-material"
+  ],
+  "own_top": [
+    {
+      "project": "setuptools",
+      "downloads_30d": 467506191,
+      "latest_release": "2026-10-20",
+      "pth": [
+        "distutils-precedence.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os; var = 'SETUPTOOLS_USE_DISTUTILS'; enabled = os.environ.get(var, 'local') == 'local'; enabled and __import__('_distutils_hack').add_shim(); "
+    },
+    {
+      "project": "coverage",
+      "downloads_30d": 181756312,
+      "latest_release": "2026-11-12",
+      "pth": [
+        "a1_coverage.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import sys; exec('import os\\n\\nif os.getenv(\"COVERAGE_PROCESS_START\") or os.getenv(\"COVERAGE_PROCESS_CONFIG\"):\\n try:\\n  import coverage\\n except:\\n  pass\\n else:\\n  coverage.process_startup(slug=\"pth\")')"
+    },
+    {
+      "project": "coloredlogs",
+      "downloads_30d": 21574132,
+      "latest_release": "2021-06-11",
+      "pth": [
+        "coloredlogs.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os; exec('try: __import__(\"coloredlogs\").auto_install() if os.environ.get(\"COLOREDLOGS_AUTO_INSTALL\") else None\\nexcept ImportError: pass')"
+    },
+    {
+      "project": "pywin32",
+      "downloads_30d": 8087734,
+      "latest_release": "2026-06-04",
+      "pth": [
+        "pywin32.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import pywin32_bootstrap"
+    },
+    {
+      "project": "nvidia-cutlass-dsl",
+      "downloads_30d": 1623552,
+      "latest_release": "2026-10-16",
+      "pth": [
+        "nvidia_cutlass_dsl_packages.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import sys, os, nvidia_cutlass_dsl; sys.path.insert(0, os.path.join(nvidia_cutlass_dsl.__path__[0], 'dsl_packages'))"
+    },
+    {
+      "project": "ibm-db",
+      "downloads_30d": 1474574,
+      "latest_release": "2026-08-11",
+      "pth": [
+        "ibm_db_dll.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import _ibm_db_register_dll"
+    },
+    {
+      "project": "pynvml",
+      "downloads_30d": 1030463,
+      "latest_release": "2025-09-05",
+      "pth": [
+        "_pynvml_redirector.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import _pynvml_redirector"
+    },
+    {
+      "project": "cmeel",
+      "downloads_30d": 603176,
+      "latest_release": "2026-11-01",
+      "pth": [
+        "cmeel.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import cmeel_pth"
+    },
+    {
+      "project": "snowflake.-legacy",
+      "downloads_30d": 439116,
+      "latest_release": "2026-10-22",
+      "pth": [
+        "snowflake.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import snowflake._legacy, snowflake; snowflake.snowflake=snowflake._legacy.snowflake; snowflake.make_snowflake=snowflake._legacy.make_snowflake"
+    },
+    {
+      "project": "modin",
+      "downloads_30d": 376390,
+      "latest_release": "2025-10-02",
+      "pth": [
+        "modin-autoimport-pandas.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os; os.environ.get(\"__MODIN_AUTOIMPORT_PANDAS__\", None) and __import__(\"pandas\")"
+    },
+    {
+      "project": "better-exceptions",
+      "downloads_30d": 358752,
+      "latest_release": "2021-01-29",
+      "pth": [
+        "better_exceptions_hook.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os; exec(\"try:\\n  if 'BETTER_EXCEPTIONS' in os.environ:import better_exceptions;better_exceptions.hook()\\nexcept:print('An error occured while automatically hooking better_exceptions.\\\\nIf you uninstalled better_exceptions, you should probably delete any \\\\'better_exceptions_hook.pth\\\\' file "
+    },
+    {
+      "project": "future-fstrings",
+      "downloads_30d": 258955,
+      "latest_release": "2019-06-16",
+      "pth": [
+        "aaaaa_future_fstrings.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import sys; exec('try:\\n    import future_fstrings\\nexcept ImportError:\\n    pass\\nelse:\\n    future_fstrings.register()\\n')"
+    },
+    {
+      "project": "pip-system-certs",
+      "downloads_30d": 240529,
+      "latest_release": "2025-10-16",
+      "pth": [
+        "pip_system_certs.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import os, sys; __import__('pip_system_certs.bootstrap') and sys.modules['pip_system_certs.bootstrap'].bootstrap()"
+    },
+    {
+      "project": "urllib3-future",
+      "downloads_30d": 191378,
+      "latest_release": "2026-11-09",
+      "pth": [
+        "urllib3_future.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import os, sys, site, shutil; why = \"urllib3-future is an enhanced, backward-compatible fork of urllib3 that adds HTTP/2 and HTTP/3 support. When both packages are present, urllib3-future takes precedence to ensure a consistent environment. Python packaging has no native concept of package replaceme"
+    },
+    {
+      "project": "load-dotenv",
+      "downloads_30d": 186132,
+      "latest_release": "2022-09-02",
+      "pth": [
+        "load_dotenv.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import load_dotenv"
+    },
+    {
+      "project": "cuml-cu12",
+      "downloads_30d": 184562,
+      "latest_release": "2026-10-08",
+      "pth": [
+        "_zz_cuml_accel.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os, importlib; os.environ.get(\"CUML_ACCEL_ENABLED\", \"\").lower() in (\"1\", \"true\") and importlib.import_module(\"cuml.accel\").install()"
+    },
+    {
+      "project": "autowrapt",
+      "downloads_30d": 169594,
+      "latest_release": "2026-09-24",
+      "pth": [
+        "autowrapt-init.pth"
+      ],
+      "env": false,
+      "start": true,
+      "first_line": "import autowrapt; autowrapt.init()"
+    },
+    {
+      "project": "doppler-env",
+      "downloads_30d": 141358,
+      "latest_release": "2022-12-08",
+      "pth": [
+        "doppler_env.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import doppler_env"
+    },
+    {
+      "project": "aspose-slides",
+      "downloads_30d": 126907,
+      "latest_release": "2026-10-09",
+      "pth": [
+        "aspose_slides-26.10.0.data/purelib/asposeslides.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import asposeslides_alias"
+    },
+    {
+      "project": "numba-cuda",
+      "downloads_30d": 121135,
+      "latest_release": "2026-07-03",
+      "pth": [
+        "_numba_cuda_redirector.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import _numba_cuda_redirector"
+    },
+    {
+      "project": "scrapy-ingest",
+      "downloads_30d": 117803,
+      "latest_release": "2026-11-02",
+      "pth": [
+        "scrapy_ingest_scrapy_bootstrap.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import scrapy_ingest.scrapy_hooks; scrapy_ingest.scrapy_hooks.install()"
+    },
+    {
+      "project": "pyston-autoload",
+      "downloads_30d": 110692,
+      "latest_release": "2022-09-27",
+      "pth": [
+        "pyston_autoload.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os, sys; exec(\"\"\"(\"DISABLE_PYSTON\" not in os.environ) and __import__(\"pyston\").enable()\"\"\")"
+    },
+    {
+      "project": "pdbpp",
+      "downloads_30d": 103884,
+      "latest_release": "2026-02-23",
+      "pth": [
+        "pdbpp_hijack_pdb.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os; _pdbpp_path = f\"{os.path.sep}_pdbpp_path_hack\"; import sys; sys.path.insert(0, makepath(sitedir, \"_pdbpp_path_hack\")[0]) if int(os.environ.get('PDBPP_HIJACK_PDB', 1)) and not sys.path[0].endswith(_pdbpp_path) else None"
+    },
+    {
+      "project": "hunter",
+      "downloads_30d": 85427,
+      "latest_release": "2025-08-22",
+      "pth": [
+        "hunter.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import hunter; hunter._embed_via_environment()"
+    },
+    {
+      "project": "sphinx-jinja2-compat",
+      "downloads_30d": 75643,
+      "latest_release": "2025-08-06",
+      "pth": [
+        "_sphinx_jinja2_compat.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import sphinx_jinja2_compat"
+    },
+    {
+      "project": "certifi-linux",
+      "downloads_30d": 74869,
+      "latest_release": "2025-05-27",
+      "pth": [
+        "certifi_linux.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import os; __import__(\"certifi_linux.patch_certifi\")"
+    },
+    {
+      "project": "dlt-meta",
+      "downloads_30d": 73910,
+      "latest_release": "2026-11-09",
+      "pth": [
+        "dlt_meta.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os; os.environ.get('SDP_META_DISABLE_SRC_ALIAS') == '1' or __import__('dlt_meta')"
+    },
+    {
+      "project": "coverage_enable_subprocess",
+      "downloads_30d": 72597,
+      "latest_release": "2016-05-11",
+      "pth": [
+        "coverage_enable_subprocess.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import sys; exec(u'try:\\n    import coverage\\n# coverage throws OSError when $PWD does not exist\\nexcept (ImportError, OSError):\\n    pass\\nelse:\\n    coverage.process_startup()\\n')"
+    },
+    {
+      "project": "pre-commit-uv",
+      "downloads_30d": 71139,
+      "latest_release": "2026-11-04",
+      "pth": [
+        "pre_commit_uv_patch.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import pre_commit_uv; pre_commit_uv._patch()"
+    },
+    {
+      "project": "manhole",
+      "downloads_30d": 56066,
+      "latest_release": "2024-07-04",
+      "pth": [
+        "manhole.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os, sys;exec('if \"PYTHONMANHOLE\" in os.environ:\\n try:\\n  from manhole import install\\n  eval(\"install({0[PYTHONMANHOLE]})\".format(os.environ))\\n except Exception as exc:\\n  sys.stderr.write(\"Failed to manhole.install({[PYTHONMANHOLE]}): {!r}\\\\n\".format(os.environ, exc))\\n')"
+    },
+    {
+      "project": "marshmallow-fastoneofschema",
+      "downloads_30d": 52902,
+      "latest_release": "2025-09-02",
+      "pth": [
+        "marshmallow_fastoneofschema.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import marshmallow_fastoneofschema._pth_bootstrap as _mfos_pth; _mfos_pth.install()"
+    },
+    {
+      "project": "workers-runtime-sdk",
+      "downloads_30d": 41170,
+      "latest_release": "2026-11-04",
+      "pth": [
+        "_workers_sdk_patch_loader.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import _workers_sdk_patch_loader"
+    },
+    {
+      "project": "flake8-helper",
+      "downloads_30d": 39149,
+      "latest_release": "2023-11-22",
+      "pth": [
+        "flake8_helper.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import code"
+    },
+    {
+      "project": "rapids-dask-dependency",
+      "downloads_30d": 36772,
+      "latest_release": "2026-10-08",
+      "pth": [
+        "_rapids_dask_dependency.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import rapids_dask_dependency"
+    },
+    {
+      "project": "dagz",
+      "downloads_30d": 33826,
+      "latest_release": "2026-09-02",
+      "pth": [
+        "dagz-0.2.291.data/purelib/zzzz_dagz_bootstrap.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import dagz.sensor.bootstrap; dagz.sensor.bootstrap.bootstrap()"
+    },
+    {
+      "project": "iowarp-core",
+      "downloads_30d": 19513,
+      "latest_release": "2026-11-11",
+      "pth": [
+        "iowarp_core.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import iowarp_core"
+    },
+    {
+      "project": "lovely-tensors",
+      "downloads_30d": 19231,
+      "latest_release": "2026-03-11",
+      "pth": [
+        "_lovely_tensors_hook.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import _lovely_tensors_hook"
+    },
+    {
+      "project": "pyauto-dotenv",
+      "downloads_30d": 16949,
+      "latest_release": "2024-03-09",
+      "pth": [
+        "hatch_autorun_pyauto_dotenv.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import os, sys;exec(\"__import__('auto_dotenv').autoload_dotenv()\")"
+    },
+    {
+      "project": "music21-rs",
+      "downloads_30d": 12195,
+      "latest_release": "2026-11-08",
+      "pth": [
+        "music21_rs_provide.pth"
+      ],
+      "env": true,
+      "start": false,
+      "first_line": "import os; os.environ.get(\"MUSIC21_RS_PROVIDE_MUSIC21\") == \"1\" and __import__(\"music21_rs\")"
+    },
+    {
+      "project": "remoterf",
+      "downloads_30d": 10709,
+      "latest_release": "2026-11-12",
+      "pth": [
+        "_remoterf_alias.pth"
+      ],
+      "env": false,
+      "start": false,
+      "first_line": "import _remoterf_alias"
+    }
+  ],
+  "own_all": [
+    "setuptools",
+    "coverage",
+    "coloredlogs",
+    "pywin32",
+    "nvidia-cutlass-dsl",
+    "ibm-db",
+    "pynvml",
+    "cmeel",
+    "snowflake.-legacy",
+    "modin",
+    "better-exceptions",
+    "future-fstrings",
+    "pip-system-certs",
+    "urllib3-future",
+    "load-dotenv",
+    "cuml-cu12",
+    "autowrapt",
+    "doppler-env",
+    "aspose-slides",
+    "numba-cuda",
+    "scrapy-ingest",
+    "pyston-autoload",
+    "pdbpp",
+    "hunter",
+    "sphinx-jinja2-compat",
+    "certifi-linux",
+    "dlt-meta",
+    "coverage_enable_subprocess",
+    "pre-commit-uv",
+    "manhole",
+    "marshmallow-fastoneofschema",
+    "workers-runtime-sdk",
+    "flake8-helper",
+    "rapids-dask-dependency",
+    "dagz",
+    "iowarp-core",
+    "lovely-tensors",
+    "pyauto-dotenv",
+    "music21-rs",
+    "remoterf",
+    "future-annotations",
+    "datatailr",
+    "horse-with-no-namespace",
+    "pytest-subket",
+    "copium",
+    "diracx-client",
+    "kolo",
+    "crunch-cli",
+    "cad",
+    "django-cmd",
+    "cuml-cu13",
+    "gammonview-helper",
+    "pytest-workaround-12888",
+    "gs-nyx",
+    "gstreamer-ext-runtime",
+    "fair-py-ops",
+    "appmap",
+    "corvinos",
+    "copium-autopatch",
+    "tethered",
+    "prismor",
+    "esp-bmgr-assist",
+    "flake8-toml-config",
+    "fluidattacks-agent",
+    "gstreamer-bundle",
+    "bolivar",
+    "floatium",
+    "ci-fleet",
+    "future-breakpoint",
+    "pylint-sqlalchemy2",
+    "doeff-hy",
+    "pyrat-game",
+    "Invenio-Config-TUW",
+    "agent-output",
+    "apcloudy-pipeline",
+    "arctic-platform",
+    "atpublic-install",
+    "auto-faulthandler",
+    "auto-uv",
+    "basedpyright-as-pyright",
+    "basthon-turtle",
+    "binaryninja-finder",
+    "blackpy",
+    "briefcase-debugger",
+    "candle-python",
+    "cdk-lazy-import",
+    "chatdev-memorysync",
+    "clearml-truen-patch",
+    "clibridge",
+    "click-llm",
+    "clusop",
+    "cntimer",
+    "convalesce-emit-pyspark",
+    "crosswind-workers",
+    "dagz-suite",
+    "datatrove-rs",
+    "dbt-metamodels",
+    "dbt-polyglot",
+    "deep-variance",
+    "deport",
+    "django-service-urls",
+    "dmpython-jdbc",
+    "docodin",
+    "dvc-databricks",
+    "entail-ai",
+    "f-codec",
+    "fattummy",
+    "fortifyos-langchain",
+    "freqtrade-delta-exchange",
+    "fullcourtdefense-agent",
+    "future-lazy-imports",
+    "future-tstrings",
+    "graphify-objectscript",
+    "gstreamer-meta",
+    "hepyy",
+    "hermes-mordred",
+    "heropen",
+    "hmr-daemon",
+    "holoscan-cu12",
+    "hyperhtml",
+    "iac-guard-v",
+    "idcn",
+    "importpatch",
+    "iowarp-core-cuda12",
+    "iowarp-core-rocm6",
+    "iowarp-core-sycl",
+    "jaclang",
+    "jax-tt-plugin",
+    "jiuwenswarm-instrumentor",
+    "jobgpumonitor",
+    "just-fix-windows-console",
+    "jvm-pybind",
+    "jx-react-agent",
+    "karellen-jdtls",
+    "karellen-llvm-clang",
+    "karellen-llvm-core",
+    "karellen-llvm-core-debug",
+    "karellen-llvm-lldb",
+    "karellen-llvm-toolchain-tools",
+    "karellen-rr",
+    "keelrun",
+    "keynet-core",
+    "kh-license-sdk",
+    "knoxcall",
+    "koskari",
+    "labscript-utils",
+    "litprinter",
+    "llama-cpp-kinetic",
+    "llm-agent-metering",
+    "loongsuite-site-bootstrap",
+    "loupe-ai",
+    "lupine-auto",
+    "makepatch",
+    "markitdown-rs",
+    "mastapy-cli-regression",
+    "metal-woof",
+    "mkdocs-ng",
+    "mkdocs-ng-material",
+    "mockro",
+    "mtlflashattn",
+    "ncompass",
+    "neuraLQX",
+    "no-code",
+    "numpy2x",
+    "oarepo-cli",
+    "odigos-agentcore",
+    "onetrace-auto",
+    "open-image",
+    "optlang-copt",
+    "orcraft",
+    "pip-auto",
+    "pipenv-uv",
+    "pirateface",
+    "pluto-ml",
+    "pluto-ml-nightly",
+    "portugython",
+    "pptx-wzq",
+    "primust",
+    "probing",
+    "pybrace",
+    "pyfa-wzq",
+    "pylazyimports",
+    "qtpy-mcp",
+    "quantark",
+    "qubestack-cudaq",
+    "quickspec",
+    "reflex-django",
+    "relayforge",
+    "rich-tracebacks",
+    "riffdb-mlflow",
+    "roar-cli",
+    "runyard",
+    "rustgments",
+    "safeframe",
+    "sansible",
+    "serpentium",
+    "sglang-radeon-rdna3",
+    "simtooreal-agent",
+    "siteinit",
+    "sixtytwo-cli",
+    "smb-path",
+    "splunk-otel-util-genai-translator-langsmith",
+    "splunk-otel-util-genai-translator-openlit",
+    "splunk-otel-util-genai-translator-traceloop",
+    "sqlty",
+    "stonefish-runtime",
+    "study-sync",
+    "system-pyside6",
+    "tortoise-orm-trace-unused-fields",
+    "trace0",
+    "traceburn",
+    "trafilatura-rs",
+    "triton-utlx",
+    "triton-utlx-rocm",
+    "tsuntrack",
+    "turbo-lambda",
+    "uc-manager-cann900-a2",
+    "uc-manager-cann900-a3",
+    "uc-manager-cann901-a2",
+    "uc-manager-cann901-a3",
+    "uc-manager-cann901-a5",
+    "uc-manager-cann910-a2",
+    "uc-manager-cann910-a3",
+    "uc-manager-cann910-a5",
+    "uc-manager-cann920-a2",
+    "uc-manager-cann920-a3",
+    "uc-manager-cann920-a5",
+    "uc-manager-cann921-a2",
+    "uc-manager-cann921-a3",
+    "uc-manager-cann921-a5",
+    "uc-manager-cuda-cu129",
+    "uc-manager-cuda-cu130",
+    "ultralytics-disk-cache-hook",
+    "vallkey",
+    "vavorka-by",
+    "vlaamscodex",
+    "vsdx-wzq",
+    "vtext-editor",
+    "wb-clouddoc-suite-mcp",
+    "xoq-can",
+    "xoq-opencv",
+    "xoq-serial",
+    "yupp",
+    "zmfh"
+  ]
+}
