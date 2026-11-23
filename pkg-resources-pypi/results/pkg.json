@@ -1,0 +1,1293 @@
+{
+  "snapshot": "2026-11-13",
+  "setuptools_82_released": "2026-02-08",
+  "projects_all": 354763,
+  "importers": 2759,
+  "importers_after_removal": 1408,
+  "importers_top60k": 1430,
+  "levels": {
+    "module": 1305,
+    "function": 199,
+    "pinned": 88,
+    "vendored": 37,
+    "safe": 994,
+    "setup": 20,
+    "other": 116
+  },
+  "check_errors": 1,
+  "safe_by_context": {
+    "fallback": 424,
+    "gated": 118,
+    "guarded": 461,
+    "loaded": 10
+  },
+  "unguarded": 1504,
+  "unguarded_after_removal": 526,
+  "unguarded_no_release_2y": 710,
+  "unguarded_active": 339,
+  "unguarded_with_repo": 1079,
+  "unguarded_active_with_repo": 238,
+  "unguarded_dynamic_only": 6,
+  "unguarded_top60k": 919,
+  "unguarded_top60k_downloads": 41971485,
+  "unguarded_after_removal_top60k": 103,
+  "calls": [
+    {
+      "name": "get_distribution",
+      "importers": 955,
+      "unguarded": 498,
+      "replacement": "importlib.metadata.version(name), or distribution(name)"
+    },
+    {
+      "name": "resource_filename",
+      "importers": 779,
+      "unguarded": 516,
+      "replacement": "importlib.resources.files(package) / path, with as_file() for a real path"
+    },
+    {
+      "name": "DistributionNotFound",
+      "importers": 477,
+      "unguarded": 254,
+      "replacement": "importlib.metadata.PackageNotFoundError"
+    },
+    {
+      "name": "require",
+      "importers": 297,
+      "unguarded": 194,
+      "replacement": "importlib.metadata.version() with packaging.specifiers.SpecifierSet"
+    },
+    {
+      "name": "working_set",
+      "importers": 285,
+      "unguarded": 150,
+      "replacement": "importlib.metadata.distributions()"
+    },
+    {
+      "name": "resource_string",
+      "importers": 190,
+      "unguarded": 122,
+      "replacement": "importlib.resources.files(package).joinpath(path).read_bytes()"
+    },
+    {
+      "name": "iter_entry_points",
+      "importers": 186,
+      "unguarded": 108,
+      "replacement": "importlib.metadata.entry_points(group=...)"
+    },
+    {
+      "name": "declare_namespace",
+      "importers": 163,
+      "unguarded": 79,
+      "replacement": "a native namespace package (PEP 420): no __init__.py"
+    },
+    {
+      "name": "parse_version",
+      "importers": 162,
+      "unguarded": 119,
+      "replacement": "packaging.version.Version"
+    },
+    {
+      "name": "Requirement",
+      "importers": 134,
+      "unguarded": 98,
+      "replacement": "packaging.requirements.Requirement"
+    },
+    {
+      "name": "resource_stream",
+      "importers": 118,
+      "unguarded": 65,
+      "replacement": "importlib.resources.files(package).joinpath(path).open('rb')"
+    },
+    {
+      "name": "VersionConflict",
+      "importers": 84,
+      "unguarded": 49,
+      "replacement": ""
+    },
+    {
+      "name": "resource_listdir",
+      "importers": 62,
+      "unguarded": 46,
+      "replacement": "importlib.resources.files(package).joinpath(path).iterdir()"
+    },
+    {
+      "name": "WorkingSet",
+      "importers": 58,
+      "unguarded": 44,
+      "replacement": ""
+    },
+    {
+      "name": "resource_exists",
+      "importers": 54,
+      "unguarded": 33,
+      "replacement": "importlib.resources.files(package).joinpath(path).is_file()"
+    }
+  ],
+  "top": [
+    {
+      "project": "pytest-runner",
+      "downloads_30d": 13411932,
+      "last_release": "2023-12-04",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "ptr/__init__.py:13"
+      ],
+      "repo": "https://github.com/pytest-dev/pytest-runner"
+    },
+    {
+      "project": "pyinstaller",
+      "downloads_30d": 4606360,
+      "last_release": "2026-09-12",
+      "level": "function",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "PyInstaller/hooks/rthooks/pyi_rth_pkgres.py:44"
+      ],
+      "repo": "https://github.com/pyinstaller/pyinstaller"
+    },
+    {
+      "project": "passlib",
+      "downloads_30d": 3028246,
+      "last_release": "2020-10-08",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "passlib/pwd.py:16"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "nose",
+      "downloads_30d": 1794701,
+      "last_release": "2015-06-02",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "nose/plugins/manager.py:378"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "pbr",
+      "downloads_30d": 1568682,
+      "last_release": "2026-10-07",
+      "level": "function",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "pbr/_compat/metadata.py:89",
+        "pbr/_compat/metadata.py:128",
+        "pbr/_compat/metadata.py:162",
+        "pbr/_compat/metadata.py:243",
+        "pbr/_compat/packaging.py:76",
+        "pbr/_compat/packaging.py:92",
+        "pbr/_compat/packaging.py:109"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "pycairo",
+      "downloads_30d": 1270579,
+      "last_release": "2026-10-04",
+      "level": "function",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "cairo/__init__.py:24"
+      ],
+      "repo": "https://github.com/pygobject/pycairo"
+    },
+    {
+      "project": "fs",
+      "downloads_30d": 894802,
+      "last_release": "2022-05-02",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "fs/__init__.py:4",
+        "fs/opener/__init__.py:6",
+        "fs/opener/registry.py:11"
+      ],
+      "repo": "https://github.com/PyFilesystem/pyfilesystem2"
+    },
+    {
+      "project": "coreapi",
+      "downloads_30d": 526530,
+      "last_release": "2017-10-05",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "coreapi/utils.py:5"
+      ],
+      "repo": "https://github.com/core-api/python-client"
+    },
+    {
+      "project": "shodan",
+      "downloads_30d": 434361,
+      "last_release": "2023-12-17",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "shodan/__main__.py:33",
+        "shodan/__main__.py:53"
+      ],
+      "repo": "https://github.com/achillean/shodan-python"
+    },
+    {
+      "project": "lm-eval",
+      "downloads_30d": 413274,
+      "last_release": "2026-08-31",
+      "level": "module",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "lm_eval/tasks/leaderboard/ifeval/instructions_util.py:23"
+      ],
+      "repo": "https://github.com/EleutherAI/lm-evaluation-harness"
+    },
+    {
+      "project": "gcloud",
+      "downloads_30d": 386044,
+      "last_release": "2016-09-23",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "gcloud/__init__.py:17",
+        "gcloud/connection.py:18",
+        "gcloud/bigtable/client.py:30"
+      ],
+      "repo": "https://github.com/GoogleCloudPlatform/gcloud-python"
+    },
+    {
+      "project": "formic2",
+      "downloads_30d": 366624,
+      "last_release": "2018-05-28",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "formic/command.py:32"
+      ],
+      "repo": "https://github.com/wolfhong/formic"
+    },
+    {
+      "project": "unicorn",
+      "downloads_30d": 261062,
+      "last_release": "2025-09-09",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "unicorn/unicorn_py2.py:8"
+      ],
+      "repo": "https://github.com/unicorn-engine/unicorn"
+    },
+    {
+      "project": "llama-index-legacy",
+      "downloads_30d": 253566,
+      "last_release": "2024-11-07",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "llama_index/legacy/download/module.py:13",
+        "llama_index/legacy/download/module.py:15"
+      ],
+      "repo": "https://github.com/run-llama/llama_index"
+    },
+    {
+      "project": "colour-science",
+      "downloads_30d": 247403,
+      "last_release": "2025-12-06",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "colour/utilities/verbose.py:872"
+      ],
+      "repo": "https://github.com/colour-science/colour"
+    },
+    {
+      "project": "genbadge",
+      "downloads_30d": 234858,
+      "last_release": "2025-11-24",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "genbadge/utils_badge.py:205",
+        "genbadge/utils_badge.py:216"
+      ],
+      "repo": "https://github.com/smarie/python-genbadge"
+    },
+    {
+      "project": "libsass",
+      "downloads_30d": 232303,
+      "last_release": "2024-01-06",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "sassutils/wsgi.py:9"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "ghidra-bridge",
+      "downloads_30d": 222929,
+      "last_release": "2023-01-30",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "ghidra_bridge/install_server.py:4"
+      ],
+      "repo": "https://github.com/justfoxing/ghidra_bridge"
+    },
+    {
+      "project": "cn2an",
+      "downloads_30d": 204524,
+      "last_release": "2026-04-22",
+      "level": "module",
+      "after_removal": true,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "build/lib/cn2an/utils.py:4",
+        "cn2an/utils.py:4"
+      ],
+      "repo": "https://github.com/Ailln/cn2an"
+    },
+    {
+      "project": "awxkit",
+      "downloads_30d": 187219,
+      "last_release": "2024-07-02",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "awxkit/cli/client.py:5"
+      ],
+      "repo": "https://github.com/ansible/awx"
+    },
+    {
+      "project": "openai-clip",
+      "downloads_30d": 184777,
+      "last_release": "2022-07-19",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "clip/clip.py:6"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "pyspark-pandas",
+      "downloads_30d": 176736,
+      "last_release": "2014-10-14",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "pyspark_pandas/__init__.py:7"
+      ],
+      "repo": "https://github.com/adgaudio/pyspark_pandas"
+    },
+    {
+      "project": "tensorboard-plugin-wit",
+      "downloads_30d": 172914,
+      "last_release": "2022-01-05",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "tensorboard_plugin_wit/wit_plugin_loader.py:23"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "sagemaker-feature-store-pyspark-3.3",
+      "downloads_30d": 171225,
+      "last_release": "2025-02-06",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "feature_store_pyspark/__init__.py:22"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "pybullet",
+      "downloads_30d": 152947,
+      "last_release": "2025-01-30",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "pybullet_envs/env_bases.py:8",
+        "pybullet_envs/bullet/minitaur_gym_env.py:22",
+        "pybullet_envs/bullet/racecarZEDGymEnv.py:17",
+        "pybullet_envs/bullet/cartpole_bullet.py:21",
+        "pybullet_envs/bullet/racecarGymEnv.py:17",
+        "pybullet_envs/bullet/kukaCamGymEnv.py:16",
+        "pybullet_envs/bullet/kukaGymEnv.py:16",
+        "pybullet_envs/bullet/minitaur_duck_gym_env.py:13",
+        "pybullet_envs/bullet/kuka_diverse_object_gym_env.py:13",
+        "pybullet_envs/prediction/pybullet_sim_gym_env.py:24",
+        "pybullet_envs/deep_mimic/gym_env/deep_mimic_env.py:21",
+        "pybullet_envs/minitaur/envs/minitaur_gym_env.py:25"
+      ],
+      "repo": "https://github.com/bulletphysics/bullet3"
+    },
+    {
+      "project": "flake8-logging-format",
+      "downloads_30d": 152208,
+      "last_release": "2024-06-11",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "logging_format/whitelist.py:5"
+      ],
+      "repo": "https://github.com/globality-corp/flake8-logging-format"
+    },
+    {
+      "project": "resemble-perth",
+      "downloads_30d": 152128,
+      "last_release": "2025-05-23",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "perth/perth_net/__init__.py:1"
+      ],
+      "repo": "https://github.com/resemble-ai/Perth"
+    },
+    {
+      "project": "barectf",
+      "downloads_30d": 151018,
+      "last_release": "2023-05-17",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "barectf/config_parse_common.py:24"
+      ],
+      "repo": "https://github.com/efficios/barectf"
+    },
+    {
+      "project": "ete3",
+      "downloads_30d": 148740,
+      "last_release": "2023-05-02",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "ez_setup.py:228"
+      ],
+      "repo": "https://github.com/etetoolkit/ete"
+    },
+    {
+      "project": "pyroma",
+      "downloads_30d": 148642,
+      "last_release": "2025-12-09",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "pyroma/tests.py:8"
+      ],
+      "repo": "https://github.com/regebro/pyroma"
+    },
+    {
+      "project": "pytdc",
+      "downloads_30d": 147698,
+      "last_release": "2025-03-31",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "tdc/chem_utils/oracle/oracle.py:13",
+        "tdc/metadata.py:5",
+        "tdc/oracles.py:6"
+      ],
+      "repo": "https://github.com/mims-harvard/TDC"
+    },
+    {
+      "project": "rlbot",
+      "downloads_30d": 136772,
+      "last_release": "2024-06-02",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "rlbot/utils/requirements_management.py:7",
+        "rlbot/utils/requirements_management.py:9"
+      ],
+      "repo": "https://github.com/RLBot/RLBot"
+    },
+    {
+      "project": "face_recognition_models",
+      "downloads_30d": 131627,
+      "last_release": "2017-09-28",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "face_recognition_models/__init__.py:7"
+      ],
+      "repo": "https://github.com/ageitgey/face_recognition_models"
+    },
+    {
+      "project": "sagemaker-inference",
+      "downloads_30d": 125186,
+      "last_release": "2023-10-25",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "sagemaker_inference/model_server.py:24"
+      ],
+      "repo": "https://github.com/aws/sagemaker-inference-toolkit"
+    },
+    {
+      "project": "pyLDAvis",
+      "downloads_30d": 119618,
+      "last_release": "2023-04-23",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "pyLDAvis/lib/python3.11/site-packages/pkg_resources/__init__.py:74",
+        "pyLDAvis/lib/python3.11/site-packages/pkg_resources/__init__.py:80",
+        "pyLDAvis/lib/python3.11/site-packages/pkg_resources/__init__.py:81",
+        "pyLDAvis/lib/python3.11/site-packages/pkg_resources/__init__.py:82",
+        "pyLDAvis/lib/python3.11/site-packages/pkg_resources/__init__.py:83",
+        "pyLDAvis/lib/python3.11/site-packages/pkg_resources/__init__.py:84",
+        "pyLDAvis/lib/python3.11/site-packages/pkg_resources/__init__.py:85",
+        "pyLDAvis/lib/python3.11/site-packages/pkg_resources/__init__.py:86",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/_reqs.py:3",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/dist.py:45",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/installer.py:10",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/package_index.py:21",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/sandbox.py:13",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/sandbox.py:15",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/version.py:1",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/wheel.py:13",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/wheel.py:15",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/command/bdist_egg.py:14",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/command/develop.py:8",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/command/easy_install.py:58",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/command/easy_install.py:64",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/command/egg_info.py:28",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/command/install_egg_info.py:8",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/command/install_scripts.py:7",
+        "pyLDAvis/lib/python3.11/site-packages/setuptools/command/test.py:11"
+      ],
+      "repo": "https://github.com/bmabey/pyLDAvis"
+    },
+    {
+      "project": "coverage-badge",
+      "downloads_30d": 119486,
+      "last_release": "2024-08-02",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "coverage_badge/__main__.py:7"
+      ],
+      "repo": "https://github.com/dbrgn/coverage-badge"
+    },
+    {
+      "project": "aim",
+      "downloads_30d": 114971,
+      "last_release": "2025-05-08",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "aim/ext/utils.py:11"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "flask-swagger",
+      "downloads_30d": 114595,
+      "last_release": "2019-03-26",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "build_swagger_spec.py:5"
+      ],
+      "repo": "https://github.com/gangverk/flask-swagger"
+    },
+    {
+      "project": "flake8-use-pathlib",
+      "downloads_30d": 112385,
+      "last_release": "2022-08-14",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "flake8_use_pathlib/checker.py:6"
+      ],
+      "repo": "https://gitlab.com/RoPP/flake8-use-pathlib"
+    },
+    {
+      "project": "google-gax",
+      "downloads_30d": 109648,
+      "last_release": "2018-02-28",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "google/gapic/__init__.py:1",
+        "google/gapic/longrunning/__init__.py:1",
+        "google/gapic/longrunning/operations_client.py:42",
+        "google/gax/__init__.py:40",
+        "google/gax/utils/metrics.py:37"
+      ],
+      "repo": "https://github.com/googleapis/gax-python"
+    }
+  ],
+  "top_after_removal": [
+    {
+      "project": "pyinstaller",
+      "downloads_30d": 4606360,
+      "last_release": "2026-09-12",
+      "level": "function",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "PyInstaller/hooks/rthooks/pyi_rth_pkgres.py:44"
+      ],
+      "repo": "https://github.com/pyinstaller/pyinstaller"
+    },
+    {
+      "project": "pbr",
+      "downloads_30d": 1568682,
+      "last_release": "2026-10-07",
+      "level": "function",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "pbr/_compat/metadata.py:89",
+        "pbr/_compat/metadata.py:128",
+        "pbr/_compat/metadata.py:162",
+        "pbr/_compat/metadata.py:243",
+        "pbr/_compat/packaging.py:76",
+        "pbr/_compat/packaging.py:92",
+        "pbr/_compat/packaging.py:109"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "pycairo",
+      "downloads_30d": 1270579,
+      "last_release": "2026-10-04",
+      "level": "function",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "cairo/__init__.py:24"
+      ],
+      "repo": "https://github.com/pygobject/pycairo"
+    },
+    {
+      "project": "lm-eval",
+      "downloads_30d": 413274,
+      "last_release": "2026-08-31",
+      "level": "module",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "lm_eval/tasks/leaderboard/ifeval/instructions_util.py:23"
+      ],
+      "repo": "https://github.com/EleutherAI/lm-evaluation-harness"
+    },
+    {
+      "project": "cn2an",
+      "downloads_30d": 204524,
+      "last_release": "2026-04-22",
+      "level": "module",
+      "after_removal": true,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "build/lib/cn2an/utils.py:4",
+        "cn2an/utils.py:4"
+      ],
+      "repo": "https://github.com/Ailln/cn2an"
+    },
+    {
+      "project": "autogluon.multimodal",
+      "downloads_30d": 106278,
+      "last_release": "2026-09-18",
+      "level": "module",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "autogluon/multimodal/data/templates.py:16"
+      ],
+      "repo": "https://github.com/autogluon/autogluon"
+    },
+    {
+      "project": "pyarmor",
+      "downloads_30d": 87910,
+      "last_release": "2026-10-31",
+      "level": "function",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "pyarmor/packer.py:389"
+      ],
+      "repo": "https://github.com/dashingsoft/pyarmor"
+    },
+    {
+      "project": "ydata-profiling",
+      "downloads_30d": 83921,
+      "last_release": "2026-04-22",
+      "level": "module",
+      "after_removal": true,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "ydata_profiling/profile_report.py:11"
+      ],
+      "repo": "https://github.com/ydataai/ydata-profiling"
+    },
+    {
+      "project": "rest.connector",
+      "downloads_30d": 71138,
+      "last_release": "2026-11-03",
+      "level": "module",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "rest/connector/utils.py:2"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "explainerdashboard",
+      "downloads_30d": 44038,
+      "last_release": "2026-02-08",
+      "level": "function",
+      "after_removal": true,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "explainerdashboard/dashboards.py:694"
+      ],
+      "repo": "https://github.com/oegedijk/explainerdashboard"
+    },
+    {
+      "project": "neptune",
+      "downloads_30d": 39568,
+      "last_release": "2026-03-17",
+      "level": "module",
+      "after_removal": true,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "neptune/cli/__main__.py:20"
+      ],
+      "repo": "https://github.com/neptune-ai/neptune-client"
+    },
+    {
+      "project": "MAVProxy",
+      "downloads_30d": 33527,
+      "last_release": "2026-09-24",
+      "level": "function",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "MAVProxy/modules/mavproxy_mmap/mmap_server.py:43"
+      ],
+      "repo": "https://github.com/ArduPilot/MAVProxy"
+    },
+    {
+      "project": "hstrat",
+      "downloads_30d": 28137,
+      "last_release": "2026-11-04",
+      "level": "module",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "hstrat/_auxiliary_lib/_check_testing_requirements.py:3"
+      ],
+      "repo": "https://github.com/mmore500/hstrat"
+    },
+    {
+      "project": "azureml-automl-runtime",
+      "downloads_30d": 27970,
+      "last_release": "2026-06-02",
+      "level": "module",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "azureml/automl/runtime/faults_verifier.py:10"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "jenkins-job-builder",
+      "downloads_30d": 24265,
+      "last_release": "2026-05-23",
+      "level": "module",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "jenkins_jobs/registry.py:22",
+        "jenkins_jobs/xml_config.py:19"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "satpy",
+      "downloads_30d": 23873,
+      "last_release": "2026-03-04",
+      "level": "function",
+      "after_removal": true,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "satpy/writers/awips_tiled.py:1702"
+      ],
+      "repo": "https://github.com/pytroll/satpy"
+    },
+    {
+      "project": "c2cgeoportal-admin",
+      "downloads_30d": 22396,
+      "last_release": "2026-11-06",
+      "level": "module",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "c2cgeoportal_admin/__init__.py:36"
+      ],
+      "repo": "https://github.com/camptocamp/c2cgeoportal"
+    },
+    {
+      "project": "c2cgeoportal-geoportal",
+      "downloads_30d": 21799,
+      "last_release": "2026-11-06",
+      "level": "module",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "c2cgeoportal_geoportal/scripts/c2cupgrade.py:43",
+        "c2cgeoportal_geoportal/scripts/pcreate.py:36"
+      ],
+      "repo": "https://github.com/camptocamp/c2cgeoportal"
+    },
+    {
+      "project": "brother-ql-next",
+      "downloads_30d": 18504,
+      "last_release": "2026-05-20",
+      "level": "function",
+      "after_removal": true,
+      "active": true,
+      "dynamic_only": false,
+      "where": [
+        "brother_ql/cli.py:103"
+      ],
+      "repo": "https://github.com/LunarEclipse363/brother_ql_next"
+    },
+    {
+      "project": "aimodelshare",
+      "downloads_30d": 18194,
+      "last_release": "2026-03-26",
+      "level": "function",
+      "after_removal": true,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "aimodelshare/playground.py:187"
+      ],
+      "repo": ""
+    }
+  ],
+  "top_before_removal": [
+    {
+      "project": "pytest-runner",
+      "downloads_30d": 13411932,
+      "last_release": "2023-12-04",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "ptr/__init__.py:13"
+      ],
+      "repo": "https://github.com/pytest-dev/pytest-runner"
+    },
+    {
+      "project": "passlib",
+      "downloads_30d": 3028246,
+      "last_release": "2020-10-08",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "passlib/pwd.py:16"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "nose",
+      "downloads_30d": 1794701,
+      "last_release": "2015-06-02",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "nose/plugins/manager.py:378"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "fs",
+      "downloads_30d": 894802,
+      "last_release": "2022-05-02",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "fs/__init__.py:4",
+        "fs/opener/__init__.py:6",
+        "fs/opener/registry.py:11"
+      ],
+      "repo": "https://github.com/PyFilesystem/pyfilesystem2"
+    },
+    {
+      "project": "coreapi",
+      "downloads_30d": 526530,
+      "last_release": "2017-10-05",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "coreapi/utils.py:5"
+      ],
+      "repo": "https://github.com/core-api/python-client"
+    },
+    {
+      "project": "shodan",
+      "downloads_30d": 434361,
+      "last_release": "2023-12-17",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "shodan/__main__.py:33",
+        "shodan/__main__.py:53"
+      ],
+      "repo": "https://github.com/achillean/shodan-python"
+    },
+    {
+      "project": "gcloud",
+      "downloads_30d": 386044,
+      "last_release": "2016-09-23",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "gcloud/__init__.py:17",
+        "gcloud/connection.py:18",
+        "gcloud/bigtable/client.py:30"
+      ],
+      "repo": "https://github.com/GoogleCloudPlatform/gcloud-python"
+    },
+    {
+      "project": "formic2",
+      "downloads_30d": 366624,
+      "last_release": "2018-05-28",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "formic/command.py:32"
+      ],
+      "repo": "https://github.com/wolfhong/formic"
+    },
+    {
+      "project": "unicorn",
+      "downloads_30d": 261062,
+      "last_release": "2025-09-09",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "unicorn/unicorn_py2.py:8"
+      ],
+      "repo": "https://github.com/unicorn-engine/unicorn"
+    },
+    {
+      "project": "llama-index-legacy",
+      "downloads_30d": 253566,
+      "last_release": "2024-11-07",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "llama_index/legacy/download/module.py:13",
+        "llama_index/legacy/download/module.py:15"
+      ],
+      "repo": "https://github.com/run-llama/llama_index"
+    },
+    {
+      "project": "colour-science",
+      "downloads_30d": 247403,
+      "last_release": "2025-12-06",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "colour/utilities/verbose.py:872"
+      ],
+      "repo": "https://github.com/colour-science/colour"
+    },
+    {
+      "project": "genbadge",
+      "downloads_30d": 234858,
+      "last_release": "2025-11-24",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "genbadge/utils_badge.py:205",
+        "genbadge/utils_badge.py:216"
+      ],
+      "repo": "https://github.com/smarie/python-genbadge"
+    },
+    {
+      "project": "libsass",
+      "downloads_30d": 232303,
+      "last_release": "2024-01-06",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "sassutils/wsgi.py:9"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "ghidra-bridge",
+      "downloads_30d": 222929,
+      "last_release": "2023-01-30",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "ghidra_bridge/install_server.py:4"
+      ],
+      "repo": "https://github.com/justfoxing/ghidra_bridge"
+    },
+    {
+      "project": "awxkit",
+      "downloads_30d": 187219,
+      "last_release": "2024-07-02",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "awxkit/cli/client.py:5"
+      ],
+      "repo": "https://github.com/ansible/awx"
+    },
+    {
+      "project": "openai-clip",
+      "downloads_30d": 184777,
+      "last_release": "2022-07-19",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "clip/clip.py:6"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "pyspark-pandas",
+      "downloads_30d": 176736,
+      "last_release": "2014-10-14",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "pyspark_pandas/__init__.py:7"
+      ],
+      "repo": "https://github.com/adgaudio/pyspark_pandas"
+    },
+    {
+      "project": "tensorboard-plugin-wit",
+      "downloads_30d": 172914,
+      "last_release": "2022-01-05",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "tensorboard_plugin_wit/wit_plugin_loader.py:23"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "sagemaker-feature-store-pyspark-3.3",
+      "downloads_30d": 171225,
+      "last_release": "2025-02-06",
+      "level": "function",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "feature_store_pyspark/__init__.py:22"
+      ],
+      "repo": ""
+    },
+    {
+      "project": "pybullet",
+      "downloads_30d": 152947,
+      "last_release": "2025-01-30",
+      "level": "module",
+      "after_removal": false,
+      "active": false,
+      "dynamic_only": false,
+      "where": [
+        "pybullet_envs/env_bases.py:8",
+        "pybullet_envs/bullet/minitaur_gym_env.py:22",
+        "pybullet_envs/bullet/racecarZEDGymEnv.py:17",
+        "pybullet_envs/bullet/cartpole_bullet.py:21",
+        "pybullet_envs/bullet/racecarGymEnv.py:17",
+        "pybullet_envs/bullet/kukaCamGymEnv.py:16",
+        "pybullet_envs/bullet/kukaGymEnv.py:16",
+        "pybullet_envs/bullet/minitaur_duck_gym_env.py:13",
+        "pybullet_envs/bullet/kuka_diverse_object_gym_env.py:13",
+        "pybullet_envs/prediction/pybullet_sim_gym_env.py:24",
+        "pybullet_envs/deep_mimic/gym_env/deep_mimic_env.py:21",
+        "pybullet_envs/minitaur/envs/minitaur_gym_env.py:25"
+      ],
+      "repo": "https://github.com/bulletphysics/bullet3"
+    }
+  ],
+  "levels_1m": {
+    "Werkzeug": "safe",
+    "aiosmtpd": "other",
+    "ansible": "safe",
+    "ansible-core": "safe",
+    "ansible-lint": "safe",
+    "atomicwrites": "other",
+    "babel": "safe",
+    "casbin": "vendored",
+    "ddsketch": "safe",
+    "django-countries": "safe",
+    "dynaconf": "safe",
+    "google-apitools": "safe",
+    "grpcio-tools": "safe",
+    "gsutil": "other",
+    "litellm": "safe",
+    "msoffcrypto-tool": "safe",
+    "nose": "function",
+    "onnxruntime": "other",
+    "onnxruntime-gpu": "other",
+    "passlib": "module",
+    "pbr": "function",
+    "py": "vendored",
+    "pycairo": "function",
+    "pycasbin": "vendored",
+    "pygame": "safe",
+    "pyinstaller": "function",
+    "pytest": "safe",
+    "pytest-runner": "module",
+    "pytest-testmon": "safe",
+    "python-stdnum": "safe",
+    "pytz": "safe",
+    "pytzdata": "safe",
+    "redshift-connector": "safe",
+    "semantic-version": "safe",
+    "sentry-sdk": "safe",
+    "supervisor": "safe"
+  }
+}

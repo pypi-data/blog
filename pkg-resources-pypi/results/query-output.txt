@@ -1,0 +1,16 @@
+┌────────────────────┬───────────────┬──────────────┬──────────────────────────────────────────────────────────────────┐
+│      project       │ downloads_30d │ last_release │                            names_used                            │
+│      varchar       │     int64     │     date     │                             varchar                              │
+├────────────────────┼───────────────┼──────────────┼──────────────────────────────────────────────────────────────────┤
+│ pytest             │     417319664 │ 2026-10-27   │ pkg_resources._namespace_packages, pkg_resources.fixup_namespac… │
+│ pytz               │     220681293 │ 2026-10-29   │ pkg_resources.resource_stream                                    │
+│ grpcio-tools       │     122158802 │ 2026-10-30   │ pkg_resources.resource_filename                                  │
+│ onnxruntime        │      71790362 │ 2026-10-26   │ pkg_resources.working_set                                        │
+│ sentry-sdk         │      66717863 │ 2026-11-12   │ pkg_resources.working_set                                        │
+│ Werkzeug           │      37350057 │ 2026-09-27   │ pkg_resources.working_set                                        │
+│ litellm            │      31988815 │ 2026-11-12   │ pkg_resources.resource_filename                                  │
+│ redshift-connector │      22126670 │ 2026-10-08   │ pkg_resources.get_distribution                                   │
+│ ansible-core       │      13052321 │ 2026-11-02   │ pkg_resources.Requirement, pkg_resources.Requirement.parse       │
+│ ansible            │       6630112 │ 2026-11-04   │ pkg_resources.DistributionNotFound, pkg_resources.get_distribut… │
+└────────────────────┴───────────────┴──────────────┴──────────────────────────────────────────────────────────────────┘
+  10 rows                                                                                                    4 columns
