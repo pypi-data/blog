@@ -6,8 +6,8 @@ chart SVGs.
 
 Usage: pth_data.py [<parquet-dir>] [<checks.jsonl>] [<out-dir>]
 
-With no arguments it reads the 13 November 2026 snapshot from Hugging Face (pinned
-revision), results/checks.jsonl, and writes to ./out.
+With no arguments it reads the current dataset from Hugging Face (rebuilt weekly, so the
+numbers drift from the post's), results/checks.jsonl, and writes to ./out.
 
 Where a .pth file ends up decides whether it runs. Python's `site` module reads .pth files
 only directly in a site directory:
@@ -34,7 +34,7 @@ import sys
 from pathlib import Path
 
 SNAPSHOT = "2026-11-13"
-HF_SNAPSHOT = "hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d"
+HF_SNAPSHOT = "hf://datasets/pypi-data/py-code"
 EXEC = ("import ", "import\t")              # site.py runs lines that start with these
 DATA_SITE = re.compile(r"^[^/]+\.data/(purelib|platlib)/[^/]+\.pth$")
 DATA_WIN = re.compile(r"^[^/]+\.data/data/(lib/site-packages/)?[^/]+\.pth$", re.I)

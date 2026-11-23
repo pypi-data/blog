@@ -7,8 +7,8 @@ It writes pkg.json, unguarded.csv (every project whose own code would fail) and 
 
 Usage: pkg_data.py [<parquet-dir>] [<checks.jsonl>] [<out-dir>]
 
-With no arguments it reads the 13 November 2026 snapshot from Hugging Face (pinned
-revision), results/checks.jsonl, and writes to ./out.
+With no arguments it reads the current dataset from Hugging Face (rebuilt weekly, so the
+numbers drift from the post's), results/checks.jsonl, and writes to ./out.
 """
 import csv
 import json
@@ -20,7 +20,7 @@ from packaging.requirements import InvalidRequirement, Requirement
 from pkg_check import file_kind
 
 SNAPSHOT = "2026-11-13"
-HF_SNAPSHOT = "hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d"
+HF_SNAPSHOT = "hf://datasets/pypi-data/py-code"
 REMOVED_ON = "2026-02-08"      # setuptools 82.0.0 upload date on PyPI
 ACTIVE_SINCE = "2026-05-13"    # a release in the six months before the snapshot
 STALE_BEFORE = "2024-11-13"    # no release in the two years before the snapshot

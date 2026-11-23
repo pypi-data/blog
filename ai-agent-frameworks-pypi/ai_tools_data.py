@@ -6,13 +6,14 @@ post and the charts.
 
     python3 ai_tools_data.py [<parquet-folder>] [<out-folder>]
 
-With no folder it reads the pinned Hugging Face snapshot, so the numbers match the posts.
+With no folder it reads the current dataset from Hugging Face. It is rebuilt weekly, so the
+numbers drift from the posts'.
 """
 import json
 import sys
 from pathlib import Path
 
-HF_SNAPSHOT = "hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d"
+HF_SNAPSHOT = "hf://datasets/pypi-data/py-code"
 SNAPSHOT_DATE = "2026-11-13"
 
 # Republished copies of other people's MCP servers under one prefix (2,160 projects).

@@ -5,15 +5,15 @@ new-packages.json plus the chart SVGs.
 
 Usage: blog_data.py [<parquet-dir>] [<out-dir>]
 
-With no arguments it reads the 13 November 2026 snapshot from Hugging Face
-(pinned revision, so the numbers match the post) and writes to ./out.
+With no arguments it reads the current dataset from Hugging Face (rebuilt weekly, so the
+numbers drift from the post's) and writes to ./out.
 """
 import json
 import sys
 from pathlib import Path
 
 SNAPSHOT = "2026-11-13"
-HF_SNAPSHOT = "hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d"
+HF_SNAPSHOT = "hf://datasets/pypi-data/py-code"
 RECENT_FROM = "2025-11-13"
 
 # SDK name -> predicate on refs (r.module, or r.name for google.genai, whose

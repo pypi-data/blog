@@ -6,15 +6,15 @@ whether each import is guarded). Writes removed.json and the chart SVGs.
 
 Usage: removed_data.py [<parquet-dir>] [<checks.jsonl>] [<out-dir>]
 
-With no arguments it reads the 13 November 2026 snapshot from Hugging Face (pinned
-revision), results/checks.jsonl, and writes to ./out.
+With no arguments it reads the current dataset from Hugging Face (rebuilt weekly, so the
+numbers drift from the post's), results/checks.jsonl, and writes to ./out.
 """
 import json
 import sys
 from pathlib import Path
 
 SNAPSHOT = "2026-11-13"
-HF_SNAPSHOT = "hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d"
+HF_SNAPSHOT = "hf://datasets/pypi-data/py-code"
 STALE_BEFORE = "2024-11-13"   # no release in the two years before the snapshot
 
 # module -> (removed in, replacement named in the "What's New" page or a PyPI backport)

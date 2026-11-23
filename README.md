@@ -9,13 +9,13 @@ The code behind the posts on the [py-code.org blog](https://py-code.org/blog/). 
 | [`llm-observability-sdks-pypi/`](llm-observability-sdks-pypi/) | [The LLM observability SDKs that PyPI projects actually import](https://py-code.org/blog/llm-observability-sdks-pypi/) |
 | [`ai-agent-frameworks-pypi/`](ai-agent-frameworks-pypi/) | [The AI agent frameworks that PyPI projects actually import](https://py-code.org/blog/ai-agent-frameworks-pypi/) |
 | [`python-pth-files-pypi/`](python-pth-files-pypi/) | [PyPI packages that run code every time Python starts](https://py-code.org/blog/python-pth-files-pypi/) |
-| [`pkg-resources-pypi/`](pkg-resources-pypi/) | [PyPI packages that still import pkg_resources](https://py-code.org/blog/pkg-resources-pypi/) |
+| [`pkg-resources-pypi/`](pkg-resources-pypi/) | [setuptools removed pkg_resources. 1,504 PyPI packages still need it](https://py-code.org/blog/pkg-resources-pypi/) |
 
 ## The data
 
 The posts use the [py-code.org dataset on Hugging Face](https://huggingface.co/datasets/pypi-data/py-code): Parquet files listing the names that each PyPI project's code imports and uses. It is built by the [scanner](https://github.com/pypi-data/py-code), which reads the `.py` files of each project's latest release, parses them with Python's `ast` module without running them, and keeps the names, not the code.
 
-The dataset is rebuilt weekly. Each post pins the dataset revision it used, so running its scripts gives the same numbers as the post.
+The dataset is rebuilt weekly, and Hugging Face keeps no older versions. Running a post's scripts today gives the current numbers, not the post's. Each folder's `results/` holds what the scripts gave when the post was written.
 
 ## Running a post's scripts
 

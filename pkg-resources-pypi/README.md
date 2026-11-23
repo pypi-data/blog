@@ -1,8 +1,8 @@
 # PyPI packages that still import pkg_resources
 
-Code and results for the post [PyPI packages that still import pkg_resources](https://py-code.org/blog/pkg-resources-pypi/): which PyPI projects still use `pkg_resources`, which setuptools 82.0.0 removed on 8 February 2026, and whether each import would fail without it.
+Code and results for the post [setuptools removed pkg_resources. 1,504 PyPI packages still need it](https://py-code.org/blog/pkg-resources-pypi/): which PyPI projects still use `pkg_resources`, which setuptools 82.0.0 removed on 8 February 2026, and whether each import would fail without it.
 
-Data: the py-code.org dataset as of **13 November 2026**, Hugging Face revision `9d81d70d6519d77f4dee4811b3e3a5d88379c17d`. 354,763 projects, latest release only.
+Data: the py-code.org dataset as of **13 November 2026**: 354,763 projects, latest release only. The dataset is rebuilt every week and Hugging Face keeps no older versions, so the 13 November data is no longer online. `results/` holds what the scripts gave on it.
 
 ## Send a fix
 
@@ -15,7 +15,7 @@ pip install duckdb packaging
 python3 pkg_data.py
 ```
 
-This reads the pinned snapshot from Hugging Face and [`results/checks.jsonl`](results/checks.jsonl), and writes `out/pkg.json`, `out/unguarded.csv` and the chart SVGs to `out/pkg-resources/`. Compare `out/pkg.json` with [`results/pkg.json`](results/pkg.json): they should be identical. Every number in the post comes from that file.
+This reads the current dataset from Hugging Face and [`results/checks.jsonl`](results/checks.jsonl), and writes `out/pkg.json`, `out/unguarded.csv` and the chart SVGs to `out/pkg-resources/`. Compare `out/pkg.json` with [`results/pkg.json`](results/pkg.json): the numbers differ by however much the index has changed since 13 November 2026. Every number in the post comes from that file.
 
 To run it on a local copy of the Parquet files instead: `python3 pkg_data.py <parquet-folder> results/checks.jsonl <out-folder>`.
 
@@ -25,7 +25,7 @@ To run it on a local copy of the Parquet files instead: `python3 pkg_data.py <pa
 
 ```
 pip install duckdb requests
-python3 -c "import duckdb; duckdb.sql(\"COPY (SELECT project, version, file FROM 'hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d/projects.parquet' WHERE project IN (SELECT project FROM 'hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d/refs.parquet' WHERE name = 'pkg_resources') ORDER BY project) TO 'projects.tsv' (DELIMITER '\t', HEADER false)\")"
+python3 -c "import duckdb; duckdb.sql(\"COPY (SELECT project, version, file FROM 'hf://datasets/pypi-data/py-code/projects.parquet' WHERE project IN (SELECT project FROM 'hf://datasets/pypi-data/py-code/refs.parquet' WHERE name = 'pkg_resources') ORDER BY project) TO 'projects.tsv' (DELIMITER '\t', HEADER false)\")"
 python3 pkg_check.py projects.tsv checks.jsonl --workers 16
 ```
 

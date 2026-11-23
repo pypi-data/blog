@@ -2,7 +2,7 @@
 
 Code and results for the post [What new PyPI packages are made of](https://py-code.org/blog/new-pypi-packages-imports/): the October 2026 jump in new projects, which LLM SDKs new packages import, requests vs httpx vs aiohttp, and pydantic v1 vs v2 validators.
 
-Data: the py-code.org dataset as of **13 November 2026**, Hugging Face revision `9d81d70d6519d77f4dee4811b3e3a5d88379c17d`. 354,763 projects, latest release only.
+Data: the py-code.org dataset as of **13 November 2026**: 354,763 projects, latest release only. The dataset is rebuilt every week and Hugging Face keeps no older versions, so the 13 November data is no longer online. `results/` holds what the scripts gave on it.
 
 ## Reproduce every number
 
@@ -11,7 +11,7 @@ pip install duckdb
 python3 blog_data.py
 ```
 
-This reads the pinned snapshot from Hugging Face and writes `out/new-packages.json` and the chart SVGs to `out/new-packages/`. Compare `out/new-packages.json` with [`results/new-packages.json`](results/new-packages.json): they should be identical. Every number in the post comes from that file.
+This reads the current dataset from Hugging Face and writes `out/new-packages.json` and the chart SVGs to `out/new-packages/`. Compare `out/new-packages.json` with [`results/new-packages.json`](results/new-packages.json): the numbers differ by however much the index has changed since 13 November 2026. Every number in the post comes from that file.
 
 To run it on a local copy of the Parquet files instead: `python3 blog_data.py <parquet-folder> <out-folder>`.
 

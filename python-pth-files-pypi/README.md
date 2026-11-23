@@ -2,7 +2,7 @@
 
 Code and results for the post [PyPI packages that run code every time Python starts](https://py-code.org/blog/python-pth-files-pypi/): which PyPI projects ship a `.pth` file with an `import` line, what that line does, whether Python actually runs it after a normal install, and which projects already ship a PEP 829 `.start` file.
 
-Data: the py-code.org dataset as of **13 November 2026**, Hugging Face revision `9d81d70d6519d77f4dee4811b3e3a5d88379c17d`. 354,763 projects, latest release only.
+Data: the py-code.org dataset as of **13 November 2026**: 354,763 projects, latest release only. The dataset is rebuilt every week and Hugging Face keeps no older versions, so the 13 November data is no longer online. `results/` holds what the scripts gave on it.
 
 ## Reproduce every number
 
@@ -11,7 +11,7 @@ pip install duckdb
 python3 pth_data.py
 ```
 
-This reads the pinned snapshot from Hugging Face and [`results/checks.jsonl`](results/checks.jsonl), and writes `out/pth.json` and the chart SVGs to `out/pth/`. Compare `out/pth.json` with [`results/pth.json`](results/pth.json): they should be identical. Every number in the post comes from that file.
+This reads the current dataset from Hugging Face and [`results/checks.jsonl`](results/checks.jsonl), and writes `out/pth.json` and the chart SVGs to `out/pth/`. Compare `out/pth.json` with [`results/pth.json`](results/pth.json): the numbers differ by however much the index has changed since 13 November 2026. Every number in the post comes from that file.
 
 To run it on a local copy of the Parquet files instead: `python3 pth_data.py <parquet-folder> results/checks.jsonl <out-folder>`.
 
@@ -21,7 +21,7 @@ To run it on a local copy of the Parquet files instead: `python3 pth_data.py <pa
 
 ```
 pip install duckdb requests
-python3 -c "import duckdb; S='hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d'; duckdb.sql(f\"COPY (SELECT project, version, file FROM '{S}/projects.parquet' WHERE project IN (SELECT project FROM '{S}/pth_files.parquet') ORDER BY project) TO 'projects.tsv' (DELIMITER '\t', HEADER false)\")"
+python3 -c "import duckdb; S='hf://datasets/pypi-data/py-code'; duckdb.sql(f\"COPY (SELECT project, version, file FROM '{S}/projects.parquet' WHERE project IN (SELECT project FROM '{S}/pth_files.parquet') ORDER BY project) TO 'projects.tsv' (DELIMITER '\t', HEADER false)\")"
 python3 pth_check.py projects.tsv checks.jsonl --workers 8
 ```
 

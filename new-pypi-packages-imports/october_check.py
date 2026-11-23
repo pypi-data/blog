@@ -7,7 +7,7 @@ those whose first upload falls in that month.
 
 Usage: october_check.py [<projects.parquet>] [<out.json>] [--sample 300]
 
-With no arguments it reads the pinned 13 November 2026 snapshot from Hugging Face
+With no arguments it reads the current dataset from Hugging Face (rebuilt weekly)
 and writes october_check.json. It asks PyPI about each sampled project, one
 request every 0.2 s, so 300 per month takes a few minutes.
 """
@@ -99,7 +99,7 @@ def decide(created):
     )
     return verdict, reason
 
-HF_PROJECTS = ("hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d"
+HF_PROJECTS = ("hf://datasets/pypi-data/py-code"
                "/projects.parquet")
 
 

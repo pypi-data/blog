@@ -2,7 +2,7 @@
 
 Code and results for the post [The AI agent frameworks that PyPI projects actually import](https://py-code.org/blog/ai-agent-frameworks-pypi/). It counts the PyPI projects whose code imports each LLM observability SDK and each AI agent framework. The same script produces the numbers for both posts in this series: [LLM observability SDKs](https://py-code.org/blog/llm-observability-sdks-pypi/) and [AI agent frameworks](https://py-code.org/blog/ai-agent-frameworks-pypi/).
 
-Data: the py-code.org dataset as of **13 November 2026**, Hugging Face revision `9d81d70d6519d77f4dee4811b3e3a5d88379c17d`. 354,763 projects, latest release only.
+Data: the py-code.org dataset as of **13 November 2026**: 354,763 projects, latest release only. The dataset is rebuilt every week and Hugging Face keeps no older versions, so the 13 November data is no longer online. `results/` holds what the scripts gave on it.
 
 ## Reproduce every number
 
@@ -11,7 +11,7 @@ pip install duckdb
 python3 ai_tools_data.py
 ```
 
-This reads the pinned snapshot from Hugging Face and writes `out/ai-tools.json` and the two bar charts to `out/ai-tools/`. Compare `out/ai-tools.json` with [`results/ai-tools.json`](results/ai-tools.json): they should be identical. Every number in the posts comes from that file.
+This reads the current dataset from Hugging Face and writes `out/ai-tools.json` and the two bar charts to `out/ai-tools/`. Compare `out/ai-tools.json` with [`results/ai-tools.json`](results/ai-tools.json): the numbers differ by however much the index has changed since 13 November 2026. Every number in the posts comes from that file.
 
 To run it on a local copy of the Parquet files instead: `python3 ai_tools_data.py <parquet-folder> <out-folder>`.
 

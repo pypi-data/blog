@@ -2,7 +2,7 @@
 
 Code and results for the post [PyPI code that breaks on Python 3.12 and 3.13](https://py-code.org/blog/removed-stdlib-modules-pypi/): which PyPI projects still import the 25 standard-library modules removed in Python 3.12 (`distutils`, `imp`, `asyncore`, `asynchat`, `smtpd`) and 3.13 (the 19 PEP 594 modules and `lib2to3`), and whether those imports would fail.
 
-Data: the py-code.org dataset as of **13 November 2026**, Hugging Face revision `9d81d70d6519d77f4dee4811b3e3a5d88379c17d`. 354,763 projects, latest release only.
+Data: the py-code.org dataset as of **13 November 2026**: 354,763 projects, latest release only. The dataset is rebuilt every week and Hugging Face keeps no older versions, so the 13 November data is no longer online. `results/` holds what the scripts gave on it.
 
 ## Reproduce every number
 
@@ -11,7 +11,7 @@ pip install duckdb
 python3 removed_data.py
 ```
 
-This reads the pinned snapshot from Hugging Face and [`results/checks.jsonl`](results/checks.jsonl), and writes `out/removed.json` and the chart SVGs to `out/removed-modules/`. Compare `out/removed.json` with [`results/removed.json`](results/removed.json): they should be identical. Every number in the post comes from that file.
+This reads the current dataset from Hugging Face and [`results/checks.jsonl`](results/checks.jsonl), and writes `out/removed.json` and the chart SVGs to `out/removed-modules/`. Compare `out/removed.json` with [`results/removed.json`](results/removed.json): the numbers differ by however much the index has changed since 13 November 2026. Every number in the post comes from that file.
 
 To run it on a local copy of the Parquet files instead: `python3 removed_data.py <parquet-folder> results/checks.jsonl <out-folder>`.
 
@@ -21,7 +21,7 @@ To run it on a local copy of the Parquet files instead: `python3 removed_data.py
 
 ```
 pip install duckdb requests
-python3 -c "import duckdb; duckdb.sql(\"COPY (SELECT project, version, file FROM 'hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d/projects.parquet' WHERE project IN (SELECT project FROM 'hf://datasets/pypi-data/py-code@9d81d70d6519d77f4dee4811b3e3a5d88379c17d/refs.parquet' WHERE name = module AND module IN ('distutils','imp','asyncore','asynchat','smtpd','aifc','audioop','cgi','cgitb','chunk','crypt','imghdr','lib2to3','mailcap','msilib','nis','nntplib','ossaudiodev','pipes','sndhdr','spwd','sunau','telnetlib','uu','xdrlib'))) TO 'projects.tsv' (DELIMITER '\t', HEADER false)\")"
+python3 -c "import duckdb; duckdb.sql(\"COPY (SELECT project, version, file FROM 'hf://datasets/pypi-data/py-code/projects.parquet' WHERE project IN (SELECT project FROM 'hf://datasets/pypi-data/py-code/refs.parquet' WHERE name = module AND module IN ('distutils','imp','asyncore','asynchat','smtpd','aifc','audioop','cgi','cgitb','chunk','crypt','imghdr','lib2to3','mailcap','msilib','nis','nntplib','ossaudiodev','pipes','sndhdr','spwd','sunau','telnetlib','uu','xdrlib'))) TO 'projects.tsv' (DELIMITER '\t', HEADER false)\")"
 python3 removed_check.py projects.tsv checks.jsonl --workers 8
 ```
 
